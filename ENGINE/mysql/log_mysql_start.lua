@@ -1,6 +1,6 @@
 gMysqlHost_Log = "localhost"
 gMysqlUser_Log = "reallife"
-gMysqlPass_Log = "-rl-2009-co1992we-"
+gMysqlPass_Log = ""
 gMysqlDatabase_Log = "geramy_reallife_logs"
 
 function logs_MySQL_Startup()

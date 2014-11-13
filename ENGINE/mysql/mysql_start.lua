@@ -1,6 +1,6 @@
 gMysqlHost = "localhost"
 gMysqlUser = "reallife"
-gMysqlPass = "-rl-2009-co1992we-"
+gMysqlPass = ""
 gMysqlDatabase = "geramy_reallife"
 
 function MySQL_Startup()

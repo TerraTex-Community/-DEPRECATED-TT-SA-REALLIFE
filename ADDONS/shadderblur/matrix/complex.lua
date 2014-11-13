@@ -1,4 +1,4 @@
--- complex 0.3.0
+ï»¿-- complex 0.3.0
 -- Lua 5.1
 
 -- 'complex' provides common tasks with complex numbers
@@ -138,7 +138,7 @@ end
 -- complex.convpolardeg( r, phi )
 -- convert polar coordinates ( r*e^(i*phi) ) to carthesic complex number
 -- r (radius) is a number
--- phi must be in degrees; e.g. [0ï¿½ - 360ï¿½]
+-- phi must be in degrees; e.g. [0° - 360°]
 function complex.convpolardeg( radius, phi )
 	phi = phi/180 * math.pi
 	return setmetatable( { radius * math.cos( phi ), radius * math.sin( phi ) }, complex_meta )
@@ -187,7 +187,7 @@ end
 
 -- complex.polardeg( cx )
 -- from complex number to polar coordinates
--- output in degrees; [-180ï¿½,180ï¿½]
+-- output in degrees; [-180°,180°]
 -- returns r (radius), phi (angle)
 function complex.polardeg( cx )
 	return math.sqrt( cx[1]^2 + cx[2]^2 ), math.atan2( cx[2], cx[1] ) / math.pi * 180
@@ -383,11 +383,3 @@ end
 --///////////////--
 --// chillcode //--
 --///////////////--
-
-
-
-
-
-
-
-

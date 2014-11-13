@@ -75,12 +75,3 @@ function coloroff(setter)
 end
 --addCommandHandler("effekt",coloroff)
 
-
-
-
-
-
-
-
-
-

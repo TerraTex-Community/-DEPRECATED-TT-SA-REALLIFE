@@ -1,4 +1,4 @@
-local killMessage="Off"
+﻿local killMessage="Off"
 function showKillMessages()
 	if(isAdminLevel(getLocalPlayer(),1))then
 		if(killMessage=="Off")then
@@ -79,12 +79,3 @@ function outputKillMessage ( source, wr,wg,wb,killer,kr,kg,kb,weapon,bodypart,wi
 	end
 	
 end
-
-
-
-
-
-
-
-
-

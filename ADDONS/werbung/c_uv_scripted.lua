@@ -1,4 +1,4 @@
---
+﻿--
 -- c_uv_scripted.lua
 --
 local werbetafel={
@@ -186,13 +186,4 @@ function updateUVs()
 		end
 	end
 end
-
-
-
-
-
-
-
-
-
 

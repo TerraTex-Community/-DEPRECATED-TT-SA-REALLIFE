@@ -564,12 +564,3 @@ function dxCreateShader2( filepath, priority, maxDistance, bDebug )
 	return dxCreateShader ( filepath, priority, maxDistance, bDebug )
 end
 
-
-
-
-
-
-
-
-
-

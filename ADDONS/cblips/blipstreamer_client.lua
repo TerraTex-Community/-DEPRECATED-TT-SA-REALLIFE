@@ -269,12 +269,3 @@ addEventHandler("onClientRender",g_root,
 	end
 )
 
-
-
-
-
-
-
-
-
-

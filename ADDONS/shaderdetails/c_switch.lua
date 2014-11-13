@@ -32,12 +32,3 @@ end
 
 addEvent( "onClientSwitchDetail", true )
 addEventHandler( "onClientSwitchDetail", resourceRoot, handleOnClientSwitchDetail )
-
-
-
-
-
-
-
-
-

@@ -4,7 +4,7 @@
 //
 // Badly converted from:
 //
-//      ShaderX2 ï¿½ Shader Programming Tips and Tricks with DirectX 9
+//      ShaderX2 – Shader Programming Tips and Tricks with DirectX 9
 //      http://developer.amd.com/media/gpu_assets/ShaderX2_LayeredCarPaintShader.pdf
 //
 //      Chris Oat           Natalya Tatarchuk       John Isidoro
@@ -312,12 +312,3 @@ technique fallback
         // Just draw normally
     }
 }
-
-
-
-
-
-
-
-
-

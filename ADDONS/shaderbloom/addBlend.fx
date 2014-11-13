@@ -24,12 +24,3 @@ technique addblend
         Texture[0] = sTex0;
     }
 }
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
---[[
+﻿--[[
 
   Client animation library by arc_
                Version 1.0.0
@@ -464,12 +464,3 @@ function Animation.presets.guiMoveResize(endX, endY, endWidth, endHeight, time, 
 		guiSetSize(elem, math.floor(phase.startWidth + value*(phase.endWidth - phase.startWidth)), math.floor(phase.startHeight + value*(phase.endHeight - phase.startHeight)), false)
 	end
 end
-
-
-
-
-
-
-
-
-

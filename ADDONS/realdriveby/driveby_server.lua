@@ -1,4 +1,4 @@
-local settings = {
+﻿local settings = {
 	driver = get"driveby_driver" or { 22,23,24,25,28,29},
 	passenger = get"driveby_passenger" or { 22,23,24,25,26,28,29},
 	shotdelay = get"driveby_shot_delay" or { ['22']=300,['23']=300,['24']=800,['26']=700 },
@@ -30,13 +30,4 @@ addEventHandler ( "driveby_clientScriptLoaded", getRootElement(),
 		triggerClientEvent ( client, "doSendDriveBySettings", client, settings )
 	end
 )
-
-
-
-
-
-
-
-
-
 

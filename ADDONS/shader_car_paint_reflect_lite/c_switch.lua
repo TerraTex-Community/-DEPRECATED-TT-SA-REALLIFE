@@ -46,12 +46,3 @@ end
 
 addEvent( "switchCarPaintReflectLite", true )
 addEventHandler( "switchCarPaintReflectLite", resourceRoot, switchCarPaintReflectLite )
-
-
-
-
-
-
-
-
-

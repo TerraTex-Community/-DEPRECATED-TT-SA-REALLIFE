@@ -78,12 +78,3 @@ function renderBlip ( blip, toF11Map, radarWorldX, radarWorldY, camRot, radarRad
 		setWidgetPosition(blip,mapX-sx/2,mapY-sy/2)
 	end
 end
-
-
-
-
-
-
-
-
-

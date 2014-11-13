@@ -17,11 +17,3 @@
 	<export function="isPlayerSkyDiving" type="client"/>
 	<export function="isPlayerParachuting" type="client"/>
 </meta>
-
-
-
-
-
-
-
-

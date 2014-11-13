@@ -500,12 +500,3 @@ function dxDrawDBText(msg)
 	dxDrawText(msg, dbxpos,dbypos, 200,20, textColor, textScale, textFont, "left", "top", false, false, true )
 	dbypos = dbypos + 30
 end
-
-
-
-
-
-
-
-
-

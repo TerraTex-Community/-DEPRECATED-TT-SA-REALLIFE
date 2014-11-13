@@ -148,12 +148,3 @@ addEventHandler ( "onClientRender", getRootElement(),
 	end
 )
 
-
-
-
-
-
-
-
-
-

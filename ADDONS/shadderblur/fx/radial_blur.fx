@@ -178,12 +178,3 @@ technique fallback
     }
 }
 
-
-
-
-
-
-
-
-
-

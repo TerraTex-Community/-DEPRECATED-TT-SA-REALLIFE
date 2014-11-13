@@ -46,12 +46,3 @@ function setWaterShader(bool)
 		engineRemoveShaderFromWorldTexture ( wassershader, "waterclear256" )
 	end
 end
-
-
-
-
-
-
-
-
-

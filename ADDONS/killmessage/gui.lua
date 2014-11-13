@@ -1,4 +1,4 @@
-local customKills = {}
+﻿local customKills = {}
 local config = {
 ["lines"] = 5,
 ["startY"] = 0.35,
@@ -269,12 +269,3 @@ function setWidgetAlpha ( widget, alpha )
 		widget:color(r,g,b,alpha*255)
 	end
 end
-
-
-
-
-
-
-
-
-

@@ -18,11 +18,3 @@
 	<export function="isCustomBlipVisible" type="client" />
 	<export function="destroyCustomBlip" type="client" />
 </meta>
-
-
-
-
-
-
-
-

@@ -286,12 +286,3 @@ void MTAFixUpNormal( out float3 OutNormal )
     if ( !gDeclNormal )
         OutNormal = float3(0,0,1);   // Default to up
 }
-
-
-
-
-
-
-
-
-

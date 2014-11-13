@@ -52,12 +52,3 @@ end
 
 addEvent( "switchRadialBlur", true )
 addEventHandler( "switchRadialBlur", resourceRoot, switchRadialBlur )
-
-
-
-
-
-
-
-
-

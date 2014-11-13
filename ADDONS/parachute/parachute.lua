@@ -1,4 +1,4 @@
-
+﻿
 local function onResourceStart ( resource )
 	local players = getElementsByType ( "player" )
 	for k, v in pairs ( players ) do
@@ -33,11 +33,3 @@ function requestRemoveParachute ()
 end
 addEvent ( "requestRemoveParachute", true )
 addEventHandler ( "requestRemoveParachute", root, requestRemoveParachute )
-
-
-
-
-
-
-
-

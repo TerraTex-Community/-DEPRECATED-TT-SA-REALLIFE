@@ -517,11 +517,3 @@ icons = {
 --
 [999]="ADDONS/killmessage/icons/generic.png"
 }
-
-
-
-
-
-
-
-

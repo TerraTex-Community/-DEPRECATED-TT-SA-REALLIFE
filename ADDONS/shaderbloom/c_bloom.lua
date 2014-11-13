@@ -182,12 +182,3 @@ function RTPool.GetUnused( mx, my )
 	end
 	return rt
 end
-
-
-
-
-
-
-
-
-

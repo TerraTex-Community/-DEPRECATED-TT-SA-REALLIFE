@@ -214,11 +214,3 @@ function updateScreen()
 		dxUpdateScreenSource( myScreenSource)
 	end
 end
-
-
-
-
-
-
-
-

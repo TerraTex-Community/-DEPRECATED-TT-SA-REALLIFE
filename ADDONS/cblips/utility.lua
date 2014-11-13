@@ -128,11 +128,3 @@ function getWidgetAlpha ( widget )
 		return widget.tColor[4]/255
 	end
 end
-
-
-
-
-
-
-
-

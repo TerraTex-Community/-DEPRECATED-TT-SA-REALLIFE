@@ -286,12 +286,3 @@ void MTAFixUpNormal( in out float3 OutNormal )
     if ( OutNormal.x == 0 && OutNormal.y == 0 && OutNormal.z == 0 )
         OutNormal = float3(0,0,1);   // Default to up
 }
-
-
-
-
-
-
-
-
-

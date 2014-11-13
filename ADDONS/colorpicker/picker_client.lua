@@ -1,4 +1,4 @@
-sw, sh = guiGetScreenSize()
+﻿sw, sh = guiGetScreenSize()
 
 pickerTable = {}
 
@@ -238,13 +238,4 @@ end
 
 addEvent("onColorPickerOK", true)
 addEvent("onColorPickerChange", true)
-
-
-
-
-
-
-
-
-
 

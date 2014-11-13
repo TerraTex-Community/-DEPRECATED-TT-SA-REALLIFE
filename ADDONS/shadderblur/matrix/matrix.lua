@@ -1,4 +1,4 @@
---[[
+ï»¿--[[
 	matrix v 0.2.8
 	
 	Lua 5.1 compatible
@@ -512,7 +512,7 @@ function matrix.invert( m1 )
 end
 
 --// matrix.sqrt ( m1 [,iters] )
--- calculate the square root of a matrix using "Denmanï¿½Beavers square root iteration"
+-- calculate the square root of a matrix using "Denman–Beavers square root iteration"
 -- condition: matrix rows == matrix columns; must have a invers matrix and a square root
 -- if called without additional arguments, the function finds the first nearest square root to
 -- input matrix, there are others but the error between them is very small
@@ -1260,11 +1260,3 @@ end
 --///////////////--
 --// chillcode //--
 --///////////////--
-
-
-
-
-
-
-
-

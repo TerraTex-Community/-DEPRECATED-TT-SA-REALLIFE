@@ -1,4 +1,4 @@
---[[*******************************************************************
+﻿--[[*******************************************************************
 *	Ground snow shader
 *
 *	@author:	John Lillis <JohnMichaelFFS@gmail.com>
@@ -175,11 +175,3 @@ addEventHandler("onClientResourceStart",getRootElement(),onClientResourceStart_w
 function isShaderEnabled()
 	return (isEffectEnabled and isElement(snowShader))
 end
-
-
-
-
-
-
-
-

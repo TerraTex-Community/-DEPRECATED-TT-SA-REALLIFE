@@ -77,12 +77,3 @@ float3x3 makeTextureTransform ( float2 prePosition, float2 scale, float2 scaleCe
                     ;
     return result;
 }
-
-
-
-
-
-
-
-
-

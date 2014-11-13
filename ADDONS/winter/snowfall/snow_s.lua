@@ -11,11 +11,3 @@ function setRainLevel(int)
 	_setRainLevel(0)
 	triggerClientEvent(getRootElement(),"changedRainLevel_winter",getRootElement(),int)
 end
-
-
-
-
-
-
-
-

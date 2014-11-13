@@ -1,4 +1,4 @@
-local config = {
+﻿local config = {
 ["lines"] = 5,
 ["startY"] = 0.35,
 ["textHeight"] = 16,
@@ -186,12 +186,3 @@ addEventHandler ( "onClientKillmessagesLoaded", getRootElement(),
 function()
 	triggerClientEvent(source,"doSetKillMessageStyle",source,config.startX,config.startY,config.alignX,config.lines,config.startFade,config.fadeTime)
 end )
-
-
-
-
-
-
-
-
-

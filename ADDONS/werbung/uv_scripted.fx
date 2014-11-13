@@ -52,12 +52,3 @@ technique hello
         TextureTransformFlags[0] = Count2;
     }
 }
-
-
-
-
-
-
-
-
-

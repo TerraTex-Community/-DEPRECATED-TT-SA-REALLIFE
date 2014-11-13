@@ -42,12 +42,3 @@
 	<export function="setDrivebyAutoEquip" type="client" />
 	<export function="getDrivebyAutoEquip" type="client" />
 </meta>
-
-
-
-
-
-
-
-
-

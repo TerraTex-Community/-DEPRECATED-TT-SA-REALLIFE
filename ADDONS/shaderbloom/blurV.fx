@@ -124,12 +124,3 @@ technique fallback
         // Just draw normally
     }
 }
-
-
-
-
-
-
-
-
-

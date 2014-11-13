@@ -1,4 +1,4 @@
-local werbungenTable={}
+﻿local werbungenTable={}
 local werbeschilder=19
 function onResourceStart_WerbeSchilderGenerieren()
 	
@@ -55,11 +55,3 @@ addEventHandler("requestPlayerOfMonth",getRootElement(),onResourceLoadPlayerOfMo
 		triggerLatentClientEvent(client, "onClientLoadWerbung",true, getRootElement(), data,ID,animation)
 	end
 end
-
-
-
-
-
-
-
-

@@ -560,12 +560,3 @@ function highlightCursor()
 		end
 	end
 end
-
-
-
-
-
-
-
-
-

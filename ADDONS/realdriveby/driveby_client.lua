@@ -1,4 +1,4 @@
-local driver = false
+﻿local driver = false
 local shooting = false
 local helpText,helpAnimation
 lastSlot = 0
@@ -294,12 +294,3 @@ function fadeOutHelp()
 	helpAnimation = Animation.createAndPlay(helpText, Animation.presets.dxTextFadeOut(300))
 	setTimer ( function() helpText:color(255,255,255,0) end, 300, 1 )
 end
-
-
-
-
-
-
-
-
-

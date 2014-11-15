@@ -383,7 +383,7 @@ function checkbyblacklist_func(thePlayer,cmd,types,frakid)
 			frakid=tonumber(frakid)
 			local privquery="SELECT * FROM blacklist WHERE Fraktion='"..frakid.."'"
 			local result=mysql_query(handler,privquery)
-			outputChatBox(string.format("blacklist der Fraktion %s: ", fraktionbezeichner[frakid]),thePlayer,255,255,0)
+			outputChatBox(string.format("Blacklist der Fraktion %s: ", fraktionbezeichner[frakid]),thePlayer,255,255,0)
 			while(true)do
 				data=mysql_fetch_assoc(result)
 				if not data then break end		
@@ -429,17 +429,17 @@ function setblacklist_func(thePlayer,command,toPlayerName,grund,...)
 							end
 						end
 						if(isonit)then					
-							showError(thePlayer,"Dieser Spieler ist bereits auf der blacklist!")
+							showError(thePlayer,"Dieser Spieler ist bereits auf der Blacklist!")
 						else
 							if(vioGetElementData(toPlayer,"playtime")<1500)then
-								showError(thePlayer,"Dieser Spieler ist noch im Neulingsstatus (ROOKIE) und kann daher auf keine blacklist gesetzt werden!")
+								showError(thePlayer,"Dieser Spieler ist noch im Neulingsstatus (ROOKIE) und kann daher auf keine Blacklist gesetzt werden!")
 							else
 								local query="INSERT INTO blacklist (Name,Fraktion,Von,Grund) VALUES ('"..toPlayerName.."','"..vioGetElementData(thePlayer,"fraktion").."','"..getPlayerName(thePlayer).."','"..reason.."')"
 								local resultre=mysql_query(handler,query)
 								mysql_free_result (resultre)
 								local id=MySQL_GetVar("blacklist", "ID", "Name='"..toPlayerName.."' and Fraktion='"..vioGetElementData(thePlayer,"fraktion").."'")
 								table.insert(blacklist[vioGetElementData(thePlayer,"fraktion")],{toPlayerName,id})				
-								showError(thePlayer,"Dieser Spieler ist jetzt auf der blacklist!")
+								showError(thePlayer,"Dieser Spieler ist jetzt auf der Blacklist!")
 							end
 						end		
 						
@@ -473,13 +473,13 @@ function unsetblacklist_func(thePlayer,command,toPlayerName)
 						end
 					end
 					if not(isonit)then					
-						showError(thePlayer,"Dieser Spieler ist nicht auf der blacklist!")
+						showError(thePlayer,"Dieser Spieler ist nicht auf der Blacklist!")
 					else
 						local query="DELETE FROM blacklist WHERE Name='"..toPlayerName.."' and Fraktion='"..vioGetElementData(thePlayer,"fraktion").."'"
 						local resultre=mysql_query(handler,query)	
 						mysql_free_result (resultre)
 						table.remove(blacklist[vioGetElementData(thePlayer,"fraktion")],isonitkey)
-						showError(thePlayer,"Dieser Spieler ist jetzt nicht mehr auf der blacklist!")
+						showError(thePlayer,"Dieser Spieler ist jetzt nicht mehr auf der Blacklist!")
 					end		
 					
 				else

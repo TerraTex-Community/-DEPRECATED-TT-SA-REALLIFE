@@ -550,6 +550,10 @@ function LoginPlayerData(nickname,pw)
 				setPlayerTeam(source,team[vioGetElementData(source,"fraktion")])
 			end
 			setPlayerWantedLevel(source,vioGetElementData(source,"wanteds"))
+
+			--Loginfenster vorher schliessen damit beim TutGUI der Cursor auch wieder angezeigt werden kann :)
+			triggerClientEvent(source,"hideLoginGui",source)
+
 			if(vioGetElementData(source,"tut")==0)then
 				triggerClientEvent(source,"showTutGui_first",source,source)
 				vioSetElementData(source,"tut",1)
@@ -567,18 +571,10 @@ function LoginPlayerData(nickname,pw)
 				if(string.lower(thevehicleentry[1])== string.lower(getPlayerName(source)))then
 					local slot=thevehicleentry[2]
 					vioSetElementData(source,"slot"..slot,thevehicleentry[3])
-
-
 				end
 			end
 			
-			
 			setPlayerMoney ( source,vioGetElementData(source,"money"))
-			triggerClientEvent(source,"hideLoginGui",source)
-			
-			
-			
-			
 			
 			local time=getRealTime()
 			local premiumOutTime=(MySQL_GetVar("premium", "PremiumUntil","Name='"..nickname.."'"))-time.timestamp

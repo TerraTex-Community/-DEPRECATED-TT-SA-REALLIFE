@@ -16,18 +16,14 @@ addEventHandler("onClientResourceStart",getRootElement(),
         guiWindowSetMovable(Login_Gui, false)
         guiWindowSetSizable(Login_Gui, false)
 		
-
 		Gui_login_label = guiCreateLabel(10, 98, 74, 45, "Passwort:", false, Login_Gui)
         Gui_login_edit = guiCreateEdit(67, 97, 295, 26, "", false, Login_Gui)
-        guiEditSetMasked(Gui_login_edit, true)
-		
+        guiEditSetMasked(Gui_login_edit, true)		
 		
         Gui_Login_Button = guiCreateButton(10, 133, 352, 30, "Login", false, Login_Gui)
         local loginlabel=guiCreateLabel(10, 173, 352, 101, "Passwort vergessen?\nDann besuche http://cp.tt-rl.de und nutze die dort hinterlegte 'Passwort vergessen'-Funktion.\n\nNoch kein Nickname, aber dieses Fenster?\nDann wähle einen anderen Nickname, dieser ist bereits belegt.", false, Login_Gui)
         guiLabelSetHorizontalAlign(loginlabel, "left", true)
         guiCreateStaticImage(9, 26, 353, 61, "FILES/IMAGES/header.png", false, Login_Gui)    
-
-
 
 		guiSetVisible (Login_Gui, false)
 		table.insert(allGuis,Login_Gui)
@@ -49,13 +45,9 @@ function startLogin(button, state)
 		hasLoginClicked=true
 		local pass =guiGetText(Gui_login_edit )
 		if(pass=="")then
-
 			showError(getLocalPlayer(),"Du hast kein korrektes Passwort eingegeben!")
 		else
-
-			triggerServerEvent("loginPlayer",getLocalPlayer(),getPlayerName(getLocalPlayer()),pass)
-							
-
+			triggerServerEvent("loginPlayer",getLocalPlayer(),getPlayerName(getLocalPlayer()),pass)				
 		end		
 		setTimer(reloadLoginGui,1000,1)
 	end
@@ -66,9 +58,9 @@ function reloadLoginGui()
 end
 
 function disableLoginGui()
-	    guiSetVisible (Login_Gui , false)
-		showCursor (false)
-		toggleAllControls ( true, true, true )
+    guiSetVisible (Login_Gui , false)
+	showCursor (false)
+	toggleAllControls ( true, true, true )
 end
 addEvent("hideLoginGui",true)
 addEventHandler("hideLoginGui",getRootElement(),disableLoginGui)

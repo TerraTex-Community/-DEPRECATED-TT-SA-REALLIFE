@@ -210,7 +210,7 @@ function makeleaderAdminGUI()
 	local row,colo=guiGridListGetSelectedItem ( AdminGUI_Grid[1]  )
 	if(row~=-1)then
 		local player=guiGridListGetItemText ( AdminGUI_Grid[1] , row, colo)
-		triggerServerEvent("executeServerCommandHandler",getLocalPlayer(),"maskeleader",player.." "..guiGetText(AdminGUI_Edit[6] ))
+		triggerServerEvent("executeServerCommandHandler",getLocalPlayer(),"setfraktion",player.." "..guiGetText(AdminGUI_Edit[6]).." 5")
 	else
 		showError(getLocalPlayer(),"Sie haben keinen Spieler gewählt!")
 	end	

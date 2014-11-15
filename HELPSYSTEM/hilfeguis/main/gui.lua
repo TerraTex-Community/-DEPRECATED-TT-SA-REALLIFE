@@ -85,7 +85,7 @@ function showTutGui_first_func()
 	f1_menu.lastOpenGUI=f1_welcome.window[1]
 	guiSetVisible(f1_welcome.window[1],true)
 	guiSetVisible(f1_menu.window[1],true)
-	showCursor(true)	
+	showCursor(true)
 end
 addEventHandler("showTutGui_first",getRootElement(),showTutGui_first_func)
 

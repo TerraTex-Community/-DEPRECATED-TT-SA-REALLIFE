@@ -101,10 +101,10 @@ function printHaltestellenInFile(thePlayer)
     for theKey,theRoute in pairs(routenListe)do
         genContent=genContent.."routenListe[\""..theKey.."\"]={"..table.concat(theRoute,",").."}\n"
     end
-    if(fileExists(":geramy_reallife/LOGS/Haltestellen.lua"))then
-        fileDelete (":geramy_reallife/LOGS/Haltestellen.lua")
+    if(fileExists(":"..getResourceName(getThisResource()).."/LOGS/Haltestellen.lua"))then
+        fileDelete (":"..getResourceName(getThisResource()).."/LOGS/Haltestellen.lua")
     end
-    local newFile = fileCreate(":geramy_reallife/LOGS/Haltestellen.lua")
+    local newFile = fileCreate(":"..getResourceName(getThisResource()).."/LOGS/Haltestellen.lua")
     if (newFile) then
         fileWrite(newFile, genContent)
         fileClose(newFile)

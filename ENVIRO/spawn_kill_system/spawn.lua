@@ -117,7 +117,7 @@ function setPlayerSpawn(source,spawn,skinid,fraktion,firstspawn)
 						
 						local time=getRealTime()
 						local nickname=getPlayerName(source)
-						local premiumOutTime=(MySQL_GetVar("Premium", "PremiumUntil","Name='"..nickname.."'"))-time.timestamp
+						local premiumOutTime=(MySQL_GetVar("premium", "PremiumUntil","Name='"..nickname.."'"))-time.timestamp
 						if(premiumOutTime>0)then
 							local slot=vioGetElementData(source,"PremiumSpawn")				
 							if isElement(vioGetElementData(source,"slot"..slot)) then
@@ -143,7 +143,7 @@ function setPlayerSpawn(source,spawn,skinid,fraktion,firstspawn)
 					elseif(spawn==5)then
 						local time=getRealTime()
 						local nickname=getPlayerName(source)
-						local premiumOutTime=(MySQL_GetVar("Premium", "PremiumUntil","Name='"..nickname.."'"))-time.timestamp
+						local premiumOutTime=(MySQL_GetVar("premium", "PremiumUntil","Name='"..nickname.."'"))-time.timestamp
 						if(premiumOutTime>0)then
 							if vioGetElementData(source,"job")>0 then
 								--outputChatBox(tostring(vioGetElementData(source,"job")))

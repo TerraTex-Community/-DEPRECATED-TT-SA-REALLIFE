@@ -86,8 +86,8 @@ function loadPrivCars()
 			end
 			vioSetElementData(thevehicle,"premColor","-1")
 			local time=getRealTime()
-			if(MySQL_GetVar("Premium", "PremiumUntil","Name='"..dasatz["Besitzer"].."'"))then
-				local premiumOutTime=(MySQL_GetVar("Premium", "PremiumUntil","Name='"..dasatz["Besitzer"].."'"))-time.timestamp
+			if(MySQL_GetVar("premium", "PremiumUntil","Name='"..dasatz["Besitzer"].."'"))then
+				local premiumOutTime=(MySQL_GetVar("premium", "PremiumUntil","Name='"..dasatz["Besitzer"].."'"))-time.timestamp
 				if(premiumOutTime>0)then
 					local lights=getStringComponents(vioGetElementData(thevehicle,"Lichterfarbe"))
 					setVehicleHeadLightColor (thevehicle,tonumber(lights[1]),tonumber(lights[2]),tonumber(lights[3]))
@@ -139,7 +139,7 @@ addEventHandler("onVehicleExit",getRootElement(),onVehicleEnableFire)
 
 function save_priv_carsB()
 	outputDebugString("Started Cars Saving")
-	if not(fileExists(":geramy_reallife/devmode.dev")) then
+	if not(fileExists(":"..getResourceName(getThisResource()).."/devmode.dev")) then
 		for theKey,thetable in ipairs(privVeh) do
 --			if(thetable[3]==-2)then
 --				MySQL_SetVar("vehicles", "abgeschleppt", "1", "Besitzer='"..thetable[1].."' and SlotID='"..thetable[2].."'")
@@ -262,7 +262,7 @@ function onvehicleexplode_exec(source)
 			end
 			save_offline_message(vioGetElementData(source,"besitzer"),"Fahrzeugsystem","Ihr Fahrzeug im Slot "..vioGetElementData(source,"slotid").." wurde zerstört")
 			local time=getRealTime()
-			local premium=(MySQL_GetVar("Premium", "PremiumUntil","Name='"..vioGetElementData(source,"besitzer").."'"))-time.timestamp
+			local premium=(MySQL_GetVar("premium", "PremiumUntil","Name='"..vioGetElementData(source,"besitzer").."'"))-time.timestamp
 			local versicherung=MySQL_GetVar("userdata", "versicherung","Nickname='"..vioGetElementData(source,"besitzer").."'")
 			if(versicherung==1 or premium>0)then
 				local satz=0

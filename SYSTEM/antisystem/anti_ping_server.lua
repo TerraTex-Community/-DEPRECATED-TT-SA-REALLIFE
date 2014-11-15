@@ -6,7 +6,7 @@ local pingWhiteList={}
 function init_anti_high_ping()
 	setTimer(checkHighPing,1000,0)
 
-    local query="SELECT * FROM WHITELIST WHERE ANTIHIGHPING='1'"
+    local query="SELECT * FROM whitelist WHERE ANTIHIGHPING='1'"
     local result=mysql_query(handler,query)
     local zahl=0
     while(mysql_num_rows(result) > zahl) do
@@ -24,7 +24,7 @@ function aktualizePingWhiteList(thePlayer)
     if(isAdminLevel(thePlayer,4))then
         pingWhiteList={}
 
-        local query="SELECT * FROM WHITELIST WHERE ANTIHIGHPING='1'"
+        local query="SELECT * FROM whitelist WHERE ANTIHIGHPING='1'"
         local result=mysql_query(handler,query)
         local zahl=0
         while(mysql_num_rows(result) > zahl) do

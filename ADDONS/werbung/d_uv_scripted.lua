@@ -14,9 +14,13 @@ function onResourceStart_WerbeSchilderGenerieren()
 		else
 			local query="SELECT * FROM werbungen ORDER BY RAND() LIMIT 1"
 			local result = mysql_query(handler,query)
-			local dsatz = mysql_fetch_assoc(result)		
-			werbungenTable[i]={"WERBEBILDER/"..dsatz["picName"],tonumber(dsatz["animation"])}
-			sendFileToClient(werbungenTable[i][1], getRootElement() , "werbung", i , werbungenTable[i][2])
+			local dsatz = mysql_fetch_assoc(result)	
+			if(fileExists("WERBEBILDER/"..dsatz["picName"])) then	
+				werbungenTable[i]={"WERBEBILDER/"..dsatz["picName"],tonumber(dsatz["animation"])}
+				sendFileToClient(werbungenTable[i][1], getRootElement() , "werbung", i , werbungenTable[i][2])
+			else
+				outputDebugString(("[Werbebilder] Die Datei %s konnte nicht gefunden werden"):format("WERBEBILDER/"..dsatz["picName"]))
+			end
 		end
 	end
 	setTimer(onResourceStart_WerbeSchilderGenerieren,3600000,1)

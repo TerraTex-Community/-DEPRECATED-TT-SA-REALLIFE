@@ -1,7 +1,12 @@
-gMysqlHost = "localhost"
-gMysqlUser = "reallife"
+gMysqlHost = ""
+gMysqlUser = ""
 gMysqlPass = ""
-gMysqlDatabase = "geramy_reallife"
+gMysqlDatabase = ""
+
+if not mysql_query then
+	outputServerLog("Das MySQL Module wurde nicht installiert. Die Resource wird gestoppt..")
+	stopResource(getThisResource())
+end
 
 function MySQL_Startup()
 	handler = mysql_connect(gMysqlHost, gMysqlUser, gMysqlPass, gMysqlDatabase)

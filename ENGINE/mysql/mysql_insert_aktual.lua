@@ -2,7 +2,7 @@
 
 function Mysql_aktualize_func()
 	local antwort=false
-	local abfquery="SELECT * FROM `newTables`"
+	local abfquery="SELECT * FROM `newtables`"
 	antwort=mysql_query(handler,abfquery)
 	outputDebugString("Copyentries: "..mysql_num_rows(antwort))
 	loadInsert=0
@@ -26,7 +26,7 @@ function Mysql_aktualize_func()
 		end	
 		mysql_free_result(reha)
 		outputDebugString("COPIED TO "..tablename_akt.." named "..newNameSpalte_akt)
-		local delquery="DELETE FROM newTables WHERE ID='"..dasatz["ID"].."'"
+		local delquery="DELETE FROM newtables WHERE ID='"..dasatz["ID"].."'"
 		local resultre=mysql_query(handler,delquery)
 		mysql_free_result (resultre)
 		loadInsert=loadInsert+1

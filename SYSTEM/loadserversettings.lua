@@ -60,7 +60,7 @@ function loadSettingsFromDB()
 
 
 	serversettings["Max_User"]=0
-	if not(fileExists(":geramy_reallife/devmode.dev")) then
+	if not(fileExists(":"..getResourceName(getThisResource()).."/devmode.dev")) then
 		local lastDailyReset=tonumber(MySQL_GetVar("serversettings", "Wert","Name='DailyReset'"))
 		local time= getRealTime()
 		local timestamp=time.timestamp	
@@ -196,8 +196,13 @@ function stopResource_func()
 	--mysql_query(handler,query)
 	
 	local time= getRealTime()
-	fileRename ( "LOGS/chat.log", "LOGS/chat/"..time.monthday.."."..(time.month+1).."."..(1900+time.year).."-chat.log"  )
-
+	if(fileExists("LOGS/chat.log")) then
+		if(fileExists("LOGS/chat/"..time.monthday.."."..(time.month+1).."."..(1900+time.year).."-chat.log")) then
+			fileRename ( "LOGS/chat.log", "LOGS/chat/"..time.monthday.."."..(time.month+1).."."..(1900+time.year).."-"..(time.timestamp).."-chat.log"  )
+		else
+			fileRename ( "LOGS/chat.log", "LOGS/chat/"..time.monthday.."."..(time.month+1).."."..(1900+time.year).."-chat.log"  )
+		end
+	end
 end
 addEventHandler("onResourceStop",getRootElement(),stopResource_func)
 

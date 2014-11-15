@@ -2,7 +2,7 @@ sprunktable={}
 
 function startTrinkCreate()
 
-    local query="SELECT * FROM Sprunk"
+    local query="SELECT * FROM sprunk"
     local result=mysql_query(handler,query)
 
     local zahler=0

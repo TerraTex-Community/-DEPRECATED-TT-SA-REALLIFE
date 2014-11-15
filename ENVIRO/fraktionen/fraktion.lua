@@ -17,100 +17,100 @@ function teamserstellen()
 	frakschutz[0]=false
 	
 	team[1]=createTeam("SAPD",0,250,250)
-	frakkasse[1]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='1'")
+	frakkasse[1]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='1'")
 	blacklist[1]=false
 	frakmun[1]=false
 	frakdrogen[1]=false
 	frakschutz[1]=false
-	fraksteuer[1]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='1'")
+	fraksteuer[1]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='1'")
 	
 	team[2]=createTeam("Grove",200,140,140)
 	blacklist[2]={}
-	frakkasse[2]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='2'")
-	frakmun[2]=MySQL_GetVar("Fraktionskasse", "Munition", "FrakID='2'")
-	frakdrogen[2]=MySQL_GetVar("Fraktionskasse", "Drogen", "FrakID='2'")
+	frakkasse[2]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='2'")
+	frakmun[2]=MySQL_GetVar("fraktionskasse", "Munition", "FrakID='2'")
+	frakdrogen[2]=MySQL_GetVar("fraktionskasse", "Drogen", "FrakID='2'")
 	frakschutz[2]={}
-	fraksteuer[2]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='2'")
+	fraksteuer[2]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='2'")
 	
 	team[3]=createTeam("News",200,100,0)
 	blacklist[3]=false
-	frakkasse[3]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='3'")
+	frakkasse[3]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='3'")
 	frakmun[3]=false
 	frakdrogen[3]=false
 	frakschutz[3]=false
-	fraksteuer[3]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='3'")
+	fraksteuer[3]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='3'")
 	
 	team[4]=createTeam("Taxi",255,255,0)
 	blacklist[4]=false
-	frakkasse[4]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='4'")
+	frakkasse[4]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='4'")
 	frakmun[4]=false
 	frakdrogen[4]=false
 	frakschutz[4]=false
-	fraksteuer[4]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='4'")
+	fraksteuer[4]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='4'")
 	
 	team[5]=createTeam("SEK",200,140,140)
 	blacklist[5]=false
-	frakkasse[5]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='5'")
+	frakkasse[5]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='5'")
 	frakmun[5]=false
 	frakdrogen[5]=false
 	frakschutz[5]=false
-	fraksteuer[5]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='5'")
+	fraksteuer[5]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='5'")
 
 	team[6]=createTeam("Legion_of_Los_Santos",200,140,140)
 	blacklist[6]={}
-	frakkasse[6]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='6'")
-	frakmun[6]=MySQL_GetVar("Fraktionskasse", "Munition", "FrakID='6'")	
-	frakdrogen[6]=MySQL_GetVar("Fraktionskasse", "Drogen", "FrakID='6'")	
+	frakkasse[6]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='6'")
+	frakmun[6]=MySQL_GetVar("fraktionskasse", "Munition", "FrakID='6'")	
+	frakdrogen[6]=MySQL_GetVar("fraktionskasse", "Drogen", "FrakID='6'")	
 	frakschutz[6]={}
-	fraksteuer[6]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='6'")
+	fraksteuer[6]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='6'")
 	
 	team[7]=createTeam("N.A.M.E.",200,140,140)
 	blacklist[7]=false
-	frakkasse[7]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='7'")
+	frakkasse[7]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='7'")
 	frakmun[7]=false
 	frakdrogen[7]=false
 	frakschutz[7]=false
-	fraksteuer[7]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='7'")
+	fraksteuer[7]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='7'")
 	
 	team[8]=createTeam("The black Aliens",255,255,255)
 	blacklist[8]={}
-	frakkasse[8]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='8'")
+	frakkasse[8]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='8'")
 	frakmun[8]=false
 	frakdrogen[8]=false
 	frakschutz[8]=false
-	fraksteuer[8]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='8'")
+	fraksteuer[8]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='8'")
 	
 	team[9]=createTeam("LVPD",0,250,250)
 	blacklist[9]=false
-	frakkasse[9]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='9'")
+	frakkasse[9]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='9'")
 	frakmun[9]=false
 	frakdrogen[9]=false	
 	frakschutz[9]=false
-	fraksteuer[9]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='9'")
+	fraksteuer[9]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='9'")
 	
 	team[10]=createTeam("SA_Medics",250,0,0)
 	blacklist[10]=false
-	frakkasse[10]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='10'")
+	frakkasse[10]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='10'")
 	frakmun[10]=false
 	frakdrogen[10]=false	
 	frakschutz[10]=false
-	fraksteuer[10]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='10'")
+	fraksteuer[10]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='10'")
 	
 	team[11]=createTeam("CashForce",200,140,140)
 	blacklist[11]={}
-	frakkasse[11]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='11'")
-	frakmun[11]=MySQL_GetVar("Fraktionskasse", "Munition", "FrakID='11'")	
-	frakdrogen[11]=MySQL_GetVar("Fraktionskasse", "Drogen", "FrakID='11'")	
+	frakkasse[11]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='11'")
+	frakmun[11]=MySQL_GetVar("fraktionskasse", "Munition", "FrakID='11'")	
+	frakdrogen[11]=MySQL_GetVar("fraktionskasse", "Drogen", "FrakID='11'")	
 	frakschutz[11]={}
-	fraksteuer[11]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='11'")
+	fraksteuer[11]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='11'")
 	
 	team[12]=createTeam("Pink Panthers",200,140,140)
 	blacklist[12]={}
-	frakkasse[12]=MySQL_GetVar("Fraktionskasse", "Kasse", "FrakID='12'")
-	frakmun[12]=MySQL_GetVar("Fraktionskasse", "Munition", "FrakID='12'")	
-	frakdrogen[12]=MySQL_GetVar("Fraktionskasse", "Drogen", "FrakID='12'")	
+	frakkasse[12]=MySQL_GetVar("fraktionskasse", "Kasse", "FrakID='12'")
+	frakmun[12]=MySQL_GetVar("fraktionskasse", "Munition", "FrakID='12'")	
+	frakdrogen[12]=MySQL_GetVar("fraktionskasse", "Drogen", "FrakID='12'")	
 	frakschutz[12]={}
-	fraksteuer[12]=MySQL_GetVar("Fraktionskasse", "Steuersatz", "FrakID='12'")
+	fraksteuer[12]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='12'")
 end
 addEventHandler("onResourceStart",getRootElement(),teamserstellen)
 
@@ -139,16 +139,16 @@ addCommandHandler("fsteuer",fsteuer_func,false,false)
 function save_frakkasse(counter)
 
 		for theFraktion,theMoney in pairs(frakkasse) do
-			MySQL_SetVar("Fraktionskasse", "Kasse", theMoney, "FrakID='"..theFraktion.."'")		
+			MySQL_SetVar("fraktionskasse", "Kasse", theMoney, "FrakID='"..theFraktion.."'")		
 		end
 		for theFraktion,theMoney in pairs(frakmun) do
-			MySQL_SetVar("Fraktionskasse", "Munition", theMoney, "FrakID='"..theFraktion.."'")		
+			MySQL_SetVar("fraktionskasse", "Munition", theMoney, "FrakID='"..theFraktion.."'")		
 		end
 		for theFraktion,theMoney in pairs(frakdrogen) do
-			MySQL_SetVar("Fraktionskasse", "Drogen", theMoney, "FrakID='"..theFraktion.."'")		
+			MySQL_SetVar("fraktionskasse", "Drogen", theMoney, "FrakID='"..theFraktion.."'")		
 		end
 		for theFraktion,theMoney in pairs(fraksteuer) do
-			MySQL_SetVar("Fraktionskasse", "Steuersatz", theMoney, "FrakID='"..theFraktion.."'")		
+			MySQL_SetVar("fraktionskasse", "Steuersatz", theMoney, "FrakID='"..theFraktion.."'")		
 		end
 		
 	setTimer(save_frakkasse,3600000,1)
@@ -157,16 +157,16 @@ addEventHandler("onResourceStart",getRootElement(),save_frakkasse)
 
 function save_frakkasseB()
 	for theFraktion,theMoney in pairs(frakkasse) do
-		MySQL_SetVar("Fraktionskasse", "Kasse", theMoney, "FrakID='"..theFraktion.."'")
+		MySQL_SetVar("fraktionskasse", "Kasse", theMoney, "FrakID='"..theFraktion.."'")
 	end
 	for theFraktion,theMoney in pairs(frakmun) do
-		MySQL_SetVar("Fraktionskasse", "Munition", theMoney, "FrakID='"..theFraktion.."'")		
+		MySQL_SetVar("fraktionskasse", "Munition", theMoney, "FrakID='"..theFraktion.."'")		
 	end
 	for theFraktion,theMoney in pairs(frakdrogen) do
-		MySQL_SetVar("Fraktionskasse", "Drogen", theMoney, "FrakID='"..theFraktion.."'")		
+		MySQL_SetVar("fraktionskasse", "Drogen", theMoney, "FrakID='"..theFraktion.."'")		
 	end
 	for theFraktion,theMoney in pairs(fraksteuer) do
-		MySQL_SetVar("Fraktionskasse", "Steuersatz", theMoney, "FrakID='"..theFraktion.."'")		
+		MySQL_SetVar("fraktionskasse", "Steuersatz", theMoney, "FrakID='"..theFraktion.."'")		
 	end--outputDebugString("Fraktionskassen gespeichert!")
 
 end
@@ -192,7 +192,7 @@ function frakkasse_func(thePlayer, Command, money, grund, ...)
                         if (vioGetElementData(thePlayer, "fraktionsrang") > 3) then
                             mon = -mon
                             if (frakkasse[frak] < mon) then
-                                showError(thePlayer, "Soviel Geld ist nicht in der Fraktionskasse!")
+                                showError(thePlayer, "Soviel Geld ist nicht in der fraktionskasse!")
                             else
                                 frakkasse[frak] = frakkasse[frak] - mon
                                 frakdepot_log(frak, 1, -mon, getPlayerName(thePlayer), message)
@@ -333,7 +333,7 @@ addCommandHandler("frakmats",frakmats_func,false,false)
 function loadfromBlacklistDB()
 	for n=1,table.getn(team),1 do
 		if(blacklist[n]~=false)then
-			local privquery="SELECT * FROM Blacklist WHERE Fraktion='"..n.."'"
+			local privquery="SELECT * FROM blacklist WHERE Fraktion='"..n.."'"
 			local result=mysql_query(handler,privquery)
 			if( not result) then
 				 outputDebugString("Error executing the query: (" .. mysql_errno(handler) .. ") " .. mysql_error(handler))
@@ -354,7 +354,7 @@ function checkbyblacklist_func(thePlayer,cmd,types,frakid)
 	if(vioGetElementData(thePlayer,"fraktionsrang")>4 or isAdminLevel(thePlayer,1))then
 		if(not(frakid) or vioGetElementData(thePlayer,"adminlvl")==0)then
 			local frakid=vioGetElementData(thePlayer,"fraktion")
-			local privquery="SELECT * FROM Blacklist WHERE Fraktion='"..frakid.."'"
+			local privquery="SELECT * FROM blacklist WHERE Fraktion='"..frakid.."'"
 			local result=mysql_query(handler,privquery)
 			outputChatBox("Blacklist: ",thePlayer,255,255,0)
 			while(true)do
@@ -381,9 +381,9 @@ function checkbyblacklist_func(thePlayer,cmd,types,frakid)
 				
 		elseif(frakid and isAdminLevel(thePlayer,1))then
 			frakid=tonumber(frakid)
-			local privquery="SELECT * FROM Blacklist WHERE Fraktion='"..frakid.."'"
+			local privquery="SELECT * FROM blacklist WHERE Fraktion='"..frakid.."'"
 			local result=mysql_query(handler,privquery)
-			outputChatBox(string.format("Blacklist der Fraktion %s: ", fraktionbezeichner[frakid]),thePlayer,255,255,0)
+			outputChatBox(string.format("blacklist der Fraktion %s: ", fraktionbezeichner[frakid]),thePlayer,255,255,0)
 			while(true)do
 				data=mysql_fetch_assoc(result)
 				if not data then break end		
@@ -429,17 +429,17 @@ function setblacklist_func(thePlayer,command,toPlayerName,grund,...)
 							end
 						end
 						if(isonit)then					
-							showError(thePlayer,"Dieser Spieler ist bereits auf der Blacklist!")
+							showError(thePlayer,"Dieser Spieler ist bereits auf der blacklist!")
 						else
 							if(vioGetElementData(toPlayer,"playtime")<1500)then
-								showError(thePlayer,"Dieser Spieler ist noch im Neulingsstatus (ROOKIE) und kann daher auf keine Blacklist gesetzt werden!")
+								showError(thePlayer,"Dieser Spieler ist noch im Neulingsstatus (ROOKIE) und kann daher auf keine blacklist gesetzt werden!")
 							else
-								local query="INSERT INTO Blacklist (Name,Fraktion,Von,Grund) VALUES ('"..toPlayerName.."','"..vioGetElementData(thePlayer,"fraktion").."','"..getPlayerName(thePlayer).."','"..reason.."')"
+								local query="INSERT INTO blacklist (Name,Fraktion,Von,Grund) VALUES ('"..toPlayerName.."','"..vioGetElementData(thePlayer,"fraktion").."','"..getPlayerName(thePlayer).."','"..reason.."')"
 								local resultre=mysql_query(handler,query)
 								mysql_free_result (resultre)
-								local id=MySQL_GetVar("Blacklist", "ID", "Name='"..toPlayerName.."' and Fraktion='"..vioGetElementData(thePlayer,"fraktion").."'")
+								local id=MySQL_GetVar("blacklist", "ID", "Name='"..toPlayerName.."' and Fraktion='"..vioGetElementData(thePlayer,"fraktion").."'")
 								table.insert(blacklist[vioGetElementData(thePlayer,"fraktion")],{toPlayerName,id})				
-								showError(thePlayer,"Dieser Spieler ist jetzt auf der Blacklist!")
+								showError(thePlayer,"Dieser Spieler ist jetzt auf der blacklist!")
 							end
 						end		
 						
@@ -473,13 +473,13 @@ function unsetblacklist_func(thePlayer,command,toPlayerName)
 						end
 					end
 					if not(isonit)then					
-						showError(thePlayer,"Dieser Spieler ist nicht auf der Blacklist!")
+						showError(thePlayer,"Dieser Spieler ist nicht auf der blacklist!")
 					else
-						local query="DELETE FROM Blacklist WHERE Name='"..toPlayerName.."' and Fraktion='"..vioGetElementData(thePlayer,"fraktion").."'"
+						local query="DELETE FROM blacklist WHERE Name='"..toPlayerName.."' and Fraktion='"..vioGetElementData(thePlayer,"fraktion").."'"
 						local resultre=mysql_query(handler,query)	
 						mysql_free_result (resultre)
 						table.remove(blacklist[vioGetElementData(thePlayer,"fraktion")],isonitkey)
-						showError(thePlayer,"Dieser Spieler ist jetzt nicht mehr auf der Blacklist!")
+						showError(thePlayer,"Dieser Spieler ist jetzt nicht mehr auf der blacklist!")
 					end		
 					
 				else
@@ -493,7 +493,7 @@ addCommandHandler("unsetblacklist",unsetblacklist_func,false,false)
 
 function blacklist_func(thePlayer)
 	if(blacklist[vioGetElementData(thePlayer,"fraktion")]~=false)then
-		outputChatBox("Blacklist:",thePlayer,255,255,0)
+		outputChatBox("blacklist:",thePlayer,255,255,0)
 		if(blacklist[vioGetElementData(thePlayer,"fraktion")])then
 			local wastring=""
 			local count=0

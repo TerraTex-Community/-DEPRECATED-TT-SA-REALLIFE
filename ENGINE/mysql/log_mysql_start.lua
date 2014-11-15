@@ -1,7 +1,7 @@
-gMysqlHost_Log = "localhost"
-gMysqlUser_Log = "reallife"
+gMysqlHost_Log = ""
+gMysqlUser_Log = ""
 gMysqlPass_Log = ""
-gMysqlDatabase_Log = "geramy_reallife_logs"
+gMysqlDatabase_Log = ""
 
 function logs_MySQL_Startup()
 	logs_handler = mysql_connect(gMysqlHost_Log, gMysqlUser_Log, gMysqlPass_Log, gMysqlDatabase_Log)

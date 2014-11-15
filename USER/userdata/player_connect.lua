@@ -54,27 +54,27 @@ function playerConnect (playerNick, playerIP, playerUsername, playerSerial, play
 
 
 
-	if(MySQL_DatasetExist("Ban","IP='"..IP.."'"))then
-		local reason=MySQL_GetString("Ban", "Grund", "IP='"..IP.."'")
-		local datum=MySQL_GetString("Ban", "Bandatum", "IP='"..IP.."'")
-		local admin=MySQL_GetString("Ban", "Admin", "IP='"..IP.."'")
+	if(MySQL_DatasetExist("ban","IP='"..IP.."'"))then
+		local reason=MySQL_GetString("ban", "Grund", "IP='"..IP.."'")
+		local datum=MySQL_GetString("ban", "Bandatum", "IP='"..IP.."'")
+		local admin=MySQL_GetString("ban", "Admin", "IP='"..IP.."'")
 		local banstring=string.format("Du wurdest am %s von Admin %s vom Server gebannt Grund%s weitere Info unter cp.tt-rl.de", datum, admin, reason)
 		cancelEvent(true,banstring)
 		return true;
 	else
 
-		if(MySQL_DatasetExist("Ban","Nickname='"..uname.."'"))then
-			local reason=MySQL_GetString("Ban", "Grund", "Nickname='"..uname.."'")
-			local datum=MySQL_GetString("Ban", "Bandatum", "Nickname='"..uname.."'")
-			local admin=MySQL_GetString("Ban", "Admin", "Nickname='"..uname.."'")
+		if(MySQL_DatasetExist("ban","Nickname='"..uname.."'"))then
+			local reason=MySQL_GetString("ban", "Grund", "Nickname='"..uname.."'")
+			local datum=MySQL_GetString("ban", "Bandatum", "Nickname='"..uname.."'")
+			local admin=MySQL_GetString("ban", "Admin", "Nickname='"..uname.."'")
 			local banstring=string.format("Du wurdest am %s von Admin %s vom Server gebannt Grund%s weitere Info unter cp.tt-rl.de", datum, admin, reason)
 			cancelEvent(true,banstring)
 			return true;
 		else
-			if(MySQL_DatasetExist("Ban","Serial='"..serial.."'"))then
-				local reason=MySQL_GetString("Ban", "Grund", "Serial='"..serial.."'")
-				local datum=MySQL_GetString("Ban", "Bandatum", "Serial='"..serial.."'")
-				local admin=MySQL_GetString("Ban", "Admin", "Serial='"..serial.."'")
+			if(MySQL_DatasetExist("ban","Serial='"..serial.."'"))then
+				local reason=MySQL_GetString("ban", "Grund", "Serial='"..serial.."'")
+				local datum=MySQL_GetString("ban", "Bandatum", "Serial='"..serial.."'")
+				local admin=MySQL_GetString("ban", "Admin", "Serial='"..serial.."'")
 				local banstring=string.format("Du wurdest am %s von Admin %s vom Server gebannt Grund%s weitere Info unter cp.tt-rl.de", datum, admin, reason)
 				cancelEvent(true,banstring)
 				return true;
@@ -191,7 +191,7 @@ function RegisterPlayerData(nickname,pass,email,gebt,gebm,geby,werber)
 			local resultre=mysql_query(handler,lobquery)
 			local lobquery="INSERT INTO archievments (Nickname) VALUES('"..nickname.."');"
 			local resultre=mysql_query(handler,lobquery)
-			local lobquery="INSERT INTO Premium (Name) VALUES('"..nickname.."');"
+			local lobquery="INSERT INTO premium (Name) VALUES('"..nickname.."');"
 			local resultre=mysql_query(handler,lobquery)
 			local lobquery="INSERT INTO terratapps (Nickname) VALUES('"..nickname.."');"
 			local resultre=mysql_query(handler,lobquery)
@@ -263,8 +263,8 @@ function LoginPlayerData(nickname,pw)
 				local lobquery="INSERT INTO archievments (Nickname) VALUES('"..nickname.."');"
 				local resultre=mysql_query(handler,lobquery)
 			end			
-			if not(MySQL_DatasetExist("Premium","Name='"..getPlayerName(source).."'"))then
-				local lobquery="INSERT INTO Premium (Name) VALUES('"..nickname.."');"
+			if not(MySQL_DatasetExist("premium","Name='"..getPlayerName(source).."'"))then
+				local lobquery="INSERT INTO premium (Name) VALUES('"..nickname.."');"
 				local resultre=mysql_query(handler,lobquery)
 			end
 			if not(MySQL_DatasetExist("terratapps","Nickname='"..getPlayerName(source).."'"))then
@@ -581,7 +581,7 @@ function LoginPlayerData(nickname,pw)
 			
 			
 			local time=getRealTime()
-			local premiumOutTime=(MySQL_GetVar("Premium", "PremiumUntil","Name='"..nickname.."'"))-time.timestamp
+			local premiumOutTime=(MySQL_GetVar("premium", "PremiumUntil","Name='"..nickname.."'"))-time.timestamp
 			vioSetElementData(source,"premium",0)
 			if(premiumOutTime>0)then
 				local days=math.round(((premiumOutTime/60)/60)/24)

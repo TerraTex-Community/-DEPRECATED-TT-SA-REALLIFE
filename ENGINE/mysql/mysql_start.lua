@@ -3,10 +3,18 @@ gMysqlUser = ""
 gMysqlPass = ""
 gMysqlDatabase = ""
 
+
 if not mysql_query then
 	outputServerLog("Das MySQL Module wurde nicht installiert. Die Resource wird gestoppt..")
 	stopResource(getThisResource())
 end
+
+-- _mysql_error = mysql_error
+
+-- function mysql_error(...)
+-- 	outputDebugString(debug.traceback())
+-- 	return _mysql_error(...)
+-- end
 
 function MySQL_Startup()
 	handler = mysql_connect(gMysqlHost, gMysqlUser, gMysqlPass, gMysqlDatabase)

@@ -85,6 +85,8 @@ function changeWeather(setrainlevel)
 
     --newrainlevel=(math.random(0,700)-350)/100
     local newrainlevel=math.random(0,311)/100
+    
+    newrainlevel=-newrainlevel
     if(math.random(1,4)~=2)then
         newrainlevel=-newrainlevel
     end

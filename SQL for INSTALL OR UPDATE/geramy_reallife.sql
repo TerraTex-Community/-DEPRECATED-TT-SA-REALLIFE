@@ -6014,10 +6014,7 @@ CREATE TABLE IF NOT EXISTS `werbungen` (
 -- Daten für Tabelle `werbungen`
 --
 
-INSERT INTO `werbungen` (`ID`, `picName`, `DatumBis`, `animation`) VALUES
-(18, 'forum.png', '2014-12-01', 0),
-(19, 'medicwerbung.png', '2014-11-14', 0),
-(20, 'sapd.png', '2014-10-31', 0);
+
 
 -- --------------------------------------------------------
 

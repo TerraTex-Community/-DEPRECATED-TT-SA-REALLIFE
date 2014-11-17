@@ -305,13 +305,16 @@ function checkServerWerbung(thePlayer,Message)
 	counter=counter+afind(Message,"ilife")
 	counter=counter+afind(Message,".se")
 	counter=counter+afind(Message,".ws")
-	if(afind(Message,"vio")>0 and (afind(Message,"violet")==0) and (afind(Message,"vios")==0))then
-		counter=counter+1
-	end
+	counter=counter+afind(Message,"vio")
+	
 	--counter=counter+afind(Message,"vio")
+	
+	-- @todo: replace domains with config domain
 	if((afind(Message,"tt-rl.de")>0) or (afind(Message,"terratex.eu")>0))then
 		counter=0
 	end
+	
+	
 	if(counter>0)then
 		local players = getElementsByType ( "player" )
 		for theKey,thePlayers in ipairs(players) do

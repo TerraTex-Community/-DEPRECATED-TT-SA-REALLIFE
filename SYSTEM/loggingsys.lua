@@ -307,12 +307,18 @@ function checkServerWerbung(thePlayer,Message)
 	counter=counter+afind(Message,".ws")
 	counter=counter+afind(Message,"vio")
 	
-	--counter=counter+afind(Message,"vio")
-	-- @todo: find IPs with regular expressions
-	-- @todo: replace domains with config domain
-	if((afind(Message,"tt-rl.de")>0) or (afind(Message,"terratex.eu")>0))then
-		counter=0
+
+        if(pregFind ( Message, '[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}'))then
+	        counter=counter+1;
 	end
+	
+	for key,domain in ipairs(config["domains"])do
+		if(afind(Message,domain)>0)then
+			counter=0
+		end
+	end
+	
+	
 	
 	
 	if(counter>0)then

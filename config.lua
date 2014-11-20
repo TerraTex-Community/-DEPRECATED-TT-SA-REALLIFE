@@ -41,6 +41,13 @@ config["logmysqluser"]="logusername"
 config["logmysqlpassword"]="logpassword"
 config["logmysqldb"]="logdatabasename"
 
+--24h Restart type
+-- Options:
+-- GMX - Gamemoderestart at 3/4 o'clock
+-- SHUTDOWN  - complete Shutdown of the server at 3/4 o'clock  (recommend but you have to setup a automatic restart Script on your host)
+-- NONE - No Restart at 3/4 o'clock (not recommend)
+config["dailyrestarttype"]="SHUTDOWN"
+
 
 
 

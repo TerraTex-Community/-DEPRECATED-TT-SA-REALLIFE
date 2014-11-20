@@ -7,5 +7,24 @@ config["domains"]={"terratex.eu","tt-rl.de"}
 -- Main Domain / will later be set in credits or info guis
 config["maindomain"]="terratex.eu"
 
+--Clantag: will protect Register with this tag or names of Clanmembers without this tag (Will set that [ABC]DEF is the same like DEF in checkups)
+config["clantag"]="[TTeam]"
+
+--Community Name - The Name of the Community, which should be written f.e. in credits
+config["communityname"]="TerraTex"
+
+--passwort Hash Algo ... 
+--Options:  
+--   -> md5    (old System... not recommend)
+--   -> osha256   (Sha256 before MTA:SA 1.4.1)
+--   -> sha256    (Sha256 // avaible after MTA:SA 1.4.1)
+--   -> sha512    (Sha512 // avaible after MTA:SA 1.4.1  -- recommend)
+config["password_hash"]="sha512"
+
+--Mappername
+config["mappername"]="[TTeam]Blizard"
+
+--Scriptername
+config["scriptername"]="[TTeam]Geramy92 und [TTeam]Maxx"
 
 

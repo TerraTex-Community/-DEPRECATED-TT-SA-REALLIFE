@@ -139,7 +139,7 @@ addEventHandler("onVehicleExit",getRootElement(),onVehicleEnableFire)
 
 function save_priv_carsB()
 	outputDebugString("Started Cars Saving")
-	if not(fileExists(":"..getResourceName(getThisResource()).."/devmode.dev")) then
+	if not(config["devmode"]) then
 		for theKey,thetable in ipairs(privVeh) do
 --			if(thetable[3]==-2)then
 --				MySQL_SetVar("vehicles", "abgeschleppt", "1", "Besitzer='"..thetable[1].."' and SlotID='"..thetable[2].."'")

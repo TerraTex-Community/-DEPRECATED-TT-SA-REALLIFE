@@ -34,6 +34,10 @@ config["scriptername"]="[TTeam]Geramy92 und [TTeam]Maxx"
 -- NONE - No Restart at 3/4 o'clock (not recommend)
 config["dailyrestarttype"]="SHUTDOWN"
 
+--Devmode - will disable some functions and restrict join access (whitelist + developeraccess are configurable via database)
+-- true = enabled   false = disable / set Server in normal public mode
+config["devmode"]=true
+
 
 
 

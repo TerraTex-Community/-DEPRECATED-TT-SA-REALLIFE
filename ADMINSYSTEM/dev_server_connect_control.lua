@@ -13,7 +13,7 @@ local deleteNullAfterDays=30
 --[[ SCRIPT ]]
 function onPlayerDevServerConnect(nickname)
     local nicknameSecure=mysql_escape_string( handler, nickname )
-    if(fileExists(":"..getResourceName(getThisResource()).."/devmode.dev")) then
+    if(config["devmode"]) then
         local isDev=MySQL_GetVar("players","isDeveloper","Nickname LIKE '"..nicknameSecure.."'")
         if(isDev)then
             if(isDev==0)then

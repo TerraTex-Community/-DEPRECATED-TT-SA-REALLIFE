@@ -60,7 +60,7 @@ function loadSettingsFromDB()
 
 
 	serversettings["Max_User"]=0
-	if not(fileExists(":"..getResourceName(getThisResource()).."/devmode.dev")) then
+	if not(config["devmode"]) then
 		local lastDailyReset=tonumber(MySQL_GetVar("serversettings", "Wert","Name='DailyReset'"))
 		local time= getRealTime()
 		local timestamp=time.timestamp	

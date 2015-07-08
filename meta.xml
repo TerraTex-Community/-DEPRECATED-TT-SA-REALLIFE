@@ -6,6 +6,7 @@
 	<!-- PRE LOAD SCRIPTS -->
 	<!-- CONFIG -->
 	<script src="config.lua" type="shared" />
+	<script src="config_mysql.lua" type="server" />
         <!-- FIXXES -->
             <script src="FIXES/setPlayerWantedLevel.lua" type="server" />
             <script src="FIXES/setElementFrozen.lua" type="shared" />

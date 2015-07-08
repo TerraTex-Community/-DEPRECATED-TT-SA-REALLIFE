@@ -277,26 +277,30 @@ end
 
 local startResourceUPGMX=0
 function start_GMX()
-	
-	
-	local hours=getRealTime()
-	setTime(hours.hour,hours.minute)
-	--outputDebugString(tostring(hours.hour).." "..tostring(hours.minute))
-	if(hours.hour==3)then	
-		if(startResourceUPGMX>0)then
-			outputDebugString("AUTO GMX Started by Console")
-			outputChatBox("Regulärer 3 Uhr Serverneustart in 10 Minuten!",getRootElement(),255,0,0)
-			outputChatBox("Regulärer 3 Uhr Serverneustart in 10 Minuten!",getRootElement(),255,0,0)
-			outputChatBox("Regulärer 3 Uhr Serverneustart in 10 Minuten!",getRootElement(),255,0,0)
-
-			setTimer(startShutDown,(10*60*1000),1)
-			setTimer(gmxRestTime,60000,1,(10))
+	if(string.upper(config["dailyrestarttype"])~="NONE")then
+		local hours=getRealTime()
+		setTime(hours.hour,hours.minute)
+		--outputDebugString(tostring(hours.hour).." "..tostring(hours.minute))
+		if(hours.hour==3)then	
+			if(startResourceUPGMX>0)then
+				outputDebugString("AUTO GMX Started by Console")
+				outputChatBox("Regulärer 3 Uhr Serverneustart in 10 Minuten!",getRootElement(),255,0,0)
+				outputChatBox("Regulärer 3 Uhr Serverneustart in 10 Minuten!",getRootElement(),255,0,0)
+				outputChatBox("Regulärer 3 Uhr Serverneustart in 10 Minuten!",getRootElement(),255,0,0)
+				
+				if(string.upper(config["dailyrestarttype"])=="SHUTDOWN")then
+					setTimer(startShutDown,(10*60*1000),1)
+				else
+					setTimer(gmx_start,(10*60*1000),1)
+				end
+				setTimer(gmxRestTime,60000,1,(10))
+			else
+				setTimer(start_GMX,3600000,1)
+			end
 		else
+			startResourceUPGMX=startResourceUPGMX+1
 			setTimer(start_GMX,3600000,1)
 		end
-	else
-		startResourceUPGMX=startResourceUPGMX+1
-		setTimer(start_GMX,3600000,1)
 	end
 end
 addEventHandler("onResourceStart",getRootElement(),start_GMX)

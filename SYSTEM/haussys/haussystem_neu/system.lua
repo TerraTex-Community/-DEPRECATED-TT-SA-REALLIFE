@@ -93,7 +93,7 @@ function haussys_startup()
         mysql_free_result(result)
     end
 end
-addEventHandler("onResourceStart",getRootElement(),haussys_startup)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),haussys_startup)
 
 
 --[[Adminbefehle zum Häusersystem]]

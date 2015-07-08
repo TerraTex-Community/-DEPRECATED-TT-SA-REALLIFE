@@ -46,7 +46,7 @@ function createABaustelle()
     reloadMapExtensions()
 
 end
-addEventHandler("onResourceStart",getRootElement(),createABaustelle)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createABaustelle)
 
 
 function loadAllBaustellen()

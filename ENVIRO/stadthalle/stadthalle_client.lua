@@ -90,7 +90,7 @@ addEventHandler( "onClientGUIClick", Stadthalle_Button[2], stadthallebeenden, fa
 
 
 end
-addEventHandler("onClientResourceStart",getRootElement(),createStadthallenGui)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createStadthallenGui)
 
 
 function scheinkaufen()

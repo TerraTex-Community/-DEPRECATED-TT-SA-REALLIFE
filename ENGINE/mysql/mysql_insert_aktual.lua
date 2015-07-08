@@ -33,7 +33,7 @@ function Mysql_aktualize_func()
 	end
 	mysql_free_result(antwort)
 end
-addEventHandler("onResourceStart",getRootElement(),Mysql_aktualize_func)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),Mysql_aktualize_func)
 
 
 

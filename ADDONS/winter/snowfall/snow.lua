@@ -457,7 +457,7 @@ end
 function setSnowValues_timed()
 	setTimer(setSnowValues,5000,1)
 end
-addEventHandler("onClientResourceStart",getRootElement(),setSnowValues_timed)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),setSnowValues_timed)
 
 addEvent("changedRainLevel_winter",true)
 function changedRainLevel_winter_func(int)

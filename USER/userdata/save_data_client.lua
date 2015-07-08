@@ -14,7 +14,7 @@ function start_mydata()
 	end	
 	saveTimer=setTimer(start_mydata,600000,1)
 end
-addEventHandler("onClientResourceStart",getRootElement(),start_mydata)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),start_mydata)
 
 function reset_start_Timer()
 	if(isTimer(saveTimer))then
@@ -22,7 +22,7 @@ function reset_start_Timer()
 		saveTimer=false
 	end
 end
-addEventHandler("onClientResourceStop",getRootElement(),reset_start_Timer)
+addEventHandler("onClientResourceStop",getResourceRootElement(getThisResource()),reset_start_Timer)
 
 
 

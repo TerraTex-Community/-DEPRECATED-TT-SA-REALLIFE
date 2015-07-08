@@ -61,7 +61,7 @@ end
 function startResourceBoot()
 	startTimer_Meer()
 end
-addEventHandler("onClientResourceStart",getRootElement(),startResourceBoot)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),startResourceBoot)
 
 addEventHandler("onClientRender", root,
     function()

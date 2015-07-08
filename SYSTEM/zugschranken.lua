@@ -65,7 +65,7 @@ function onTrainSchrankeCreate()
 	end
 	setTimer(checkTrainSchrankenStatus,1000,0)
 end
-addEventHandler("onResourceStart",getRootElement(),onTrainSchrankeCreate)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onTrainSchrankeCreate)
 
 function checkTrainSchrankenStatus()
 	for theKey,theTable in ipairs(schranken)do

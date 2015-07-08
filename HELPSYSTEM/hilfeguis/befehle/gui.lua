@@ -93,7 +93,7 @@ local showbinds={
 
 }
 
-addEventHandler("onClientResourceStart", getRootElement(),
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()),
     function()
         f1_cmds.window[1] = guiCreateWindow(253, 183, 600, 535, "Wichtige Befehle", false)
         guiWindowSetSizable(f1_cmds.window[1], false)

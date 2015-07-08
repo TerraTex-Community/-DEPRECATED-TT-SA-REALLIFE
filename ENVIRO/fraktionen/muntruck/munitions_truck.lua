@@ -31,7 +31,7 @@ function onMunTruckMarker_create()
 	addEventHandler( "onMarkerHit", MunTruckMarker, onMunTruckMarkerHit )
 
 end
-addEventHandler("onResourceStart",getRootElement(),onMunTruckMarker_create)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onMunTruckMarker_create)
 
 function onMunTruckMarkerHit(hitElement)
 	local frak=vioGetElementData(hitElement,"fraktion")

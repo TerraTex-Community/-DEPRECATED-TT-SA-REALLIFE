@@ -212,11 +212,11 @@ function loadupgradenames()
  UpgradeNames[1193]="Slamin"
 
 end
-addEventHandler("onClientResourceStart",getRootElement(),loadupgradenames)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),loadupgradenames)
 
 
 
-addEventHandler("onClientResourceStart",getRootElement(),
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),
     function()
         TuningGUI_Window = {}
         TuningGUI_Button = {}

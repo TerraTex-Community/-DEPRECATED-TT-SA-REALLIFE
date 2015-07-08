@@ -46,13 +46,13 @@ function controlWeaponsAndWeaponLicense()
 	end
 	setTimer(controlWeaponsAndWeaponLicense,15000,1)
 end
-addEventHandler("onClientResourceStart",getRootElement(),controlWeaponsAndWeaponLicense)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),controlWeaponsAndWeaponLicense)
 
 
 
 
 function reloadWeaponforPlayer( key, keyState)
-	triggerServerEvent("reloadPedWeapon_Event",getLocalPlayer(),getLocalPlayer())
+	triggerServerEvent("reloadPedWeapon_Event",getResourceRootElement(getThisResource()),getLocalPlayer())
 
 end
 
@@ -60,7 +60,7 @@ end
 function bind_realoadweapon()
 	bindKey ( "r", "down", reloadWeaponforPlayer ) 
 end
-addEventHandler("onClientResourceStart",getRootElement(),bind_realoadweapon)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),bind_realoadweapon)
 
 
 

@@ -166,7 +166,7 @@ function lottoziehung_func(timer)
     end
     setTimer(lottoziehung_func,60000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),lottoziehung_func)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),lottoziehung_func)
 
 
 

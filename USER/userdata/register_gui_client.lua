@@ -12,7 +12,7 @@ RegisterGUI = {
     edit = {}
 }
 
-addEventHandler("onClientResourceStart",getRootElement(),
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),
     function()
 	    local screenW, screenH = guiGetScreenSize()
 	    Registergui = guiCreateWindow((screenW - 722) / 2, (screenH - 378) / 2, 722, 378, "Registrieren auf TerraTex", false)

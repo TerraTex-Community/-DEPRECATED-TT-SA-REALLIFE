@@ -40,7 +40,7 @@ function loadFAQ ( )
 		end
 	end
 end
-addEventHandler ( "onResourceStart", getRootElement(), loadFAQ )
+addEventHandler ( "onResourceStart", getResourceRootElement(getThisResource()), loadFAQ )
 
 
 addEvent("sendMeFAQ",true)

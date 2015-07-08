@@ -15,7 +15,7 @@ fahrplanGUI = {
     button ={}
 }
 
-addEventHandler("onClientResourceStart", getRootElement(),
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()),
     function()
         local screenW, screenH = guiGetScreenSize()
         fahrplanGUI.window[1] = guiCreateWindow((screenW - 577) / 2, (screenH - 497) / 2, 577, 497, "Fahrplan", false)

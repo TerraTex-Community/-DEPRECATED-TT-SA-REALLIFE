@@ -273,7 +273,7 @@ function onLKWResourceStart()
 	local lkwMarker=createMarker(2770.587890625,-2447.2724609375,12.64318561554,"cylinder")
 	addEventHandler("onMarkerHit",lkwMarker,hitAuftragsMarker)
 end
-addEventHandler("onResourceStart",getRootElement(),onLKWResourceStart)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onLKWResourceStart)
 
 function hitAuftragsMarker(hitElement)
 	if(vioGetElementData(hitElement,"job")==11)then

@@ -25,7 +25,7 @@ function createNewsVans()
 	end
 	
 end
-addEventHandler("onResourceStart",getRootElement(),createNewsVans)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createNewsVans)
 
 function kickFromNewsVan(thePlayer,seat)
 	if(seat==0)then

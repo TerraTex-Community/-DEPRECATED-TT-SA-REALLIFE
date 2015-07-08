@@ -67,7 +67,7 @@ function onMautCreate()
 	end
 
 end
-addEventHandler("onResourceStart",getRootElement(),onMautCreate)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onMautCreate)
 
 --local schranke_open_time=5000
 --local maut_price=50

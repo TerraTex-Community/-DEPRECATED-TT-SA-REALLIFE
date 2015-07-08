@@ -161,7 +161,7 @@ function loadHInfoIcons()
         end
     end
 end
-addEventHandler("onResourceStart",getRootElement(),loadHInfoIcons)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),loadHInfoIcons)
 
 function showHInfo(thePlayer)
     local hID=vioGetElementData(source,"haltestellenID")

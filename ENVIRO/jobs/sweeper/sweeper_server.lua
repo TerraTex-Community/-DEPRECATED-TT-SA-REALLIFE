@@ -26,7 +26,7 @@ function createSweeperJob()
 	end
 	respawnSweeperCars()
 end
-addEventHandler("onResourceStart",getRootElement(),createSweeperJob)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createSweeperJob)
 
 function respawnSweeperCars()
 	for key, theVehicle in pairs(sweeperJobCars) do

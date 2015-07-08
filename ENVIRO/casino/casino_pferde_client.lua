@@ -19,7 +19,7 @@
 	setElementInterior(marker,1)
 	addEventHandler("onClientMarkerHit",marker,enterPferdeMarker_new)
 end
-addEventHandler("onClientResourceStart",getRootElement(),createPferdeJackMarker)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createPferdeJackMarker)
  
 PferdeGUI_Window = {}
 PferdeGUI_Button = {}

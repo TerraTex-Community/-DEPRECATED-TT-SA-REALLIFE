@@ -385,7 +385,7 @@ local rules={
 
 
 
-addEventHandler("onClientResourceStart", getRootElement(),
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()),
     function()
         f1_rules.window[1] = guiCreateWindow(253, 183, 600, 535, "Regelwerk", false)
         guiWindowSetSizable(f1_rules.window[1], false)

@@ -19,7 +19,7 @@ table.insert(pizzaRoller,vehicle)
 		vioSetElementData(console[1],"adminlvl",4)
 		setTimer(respawnPizzaCars,300000,1)	
  end
- addEventHandler("onResourceStart",getRootElement(),createPizzaVehicles)
+ addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createPizzaVehicles)
  
  function respawnPizzaCars()
 	for key, theVehicle in pairs(pizzaRoller) do

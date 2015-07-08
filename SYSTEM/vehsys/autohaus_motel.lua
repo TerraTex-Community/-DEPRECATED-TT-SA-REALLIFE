@@ -240,7 +240,7 @@ function createBuyCars()
     pick=createPickup ( 2130.6787109375,-1149.76171875,24.216320037842, 3, 1239)
     addEventHandler("onPickupHit",pick,shoeAutohausInfoIcon)
 end
-addEventHandler("onResourceStart",getRootElement(),createBuyCars)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createBuyCars)
 
 function shoeAutohausInfoIcon(thePlayer)
     showError(thePlayer,"Zum Kaufen eines Fahrzeugs klicke es einfach an!")

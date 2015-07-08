@@ -55,7 +55,7 @@ function onCreatetaxicars_func()
 	end
 	loadTaxiPricesFromDB()
 end
-addEventHandler("onResourceStart",getRootElement(),onCreatetaxicars_func)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onCreatetaxicars_func)
 
 function loadTaxiPricesFromDB()
 	local tarifa=MySQL_GetVar("taxipreise", "preis", "timezone='1' and tarifzone='1'")

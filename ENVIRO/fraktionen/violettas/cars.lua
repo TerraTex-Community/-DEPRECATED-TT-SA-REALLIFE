@@ -32,7 +32,7 @@ function createviolettacars()
 	end
 	
 end
-addEventHandler("onResourceStart",getRootElement(),createviolettacars)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createviolettacars)
 
  
 function donotentercarshforce(player,seat)

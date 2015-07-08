@@ -9,7 +9,7 @@ function createStadthallenParkplatzmarker()
 	marker=createMarker(4395.998046875,-2044.05078125,1061.3297119141,"cylinder",2)
 	addEventHandler("onMarkerHit",marker,setPlayerAusStadthallenParkplatz)
 end
-addEventHandler("onResourceStart",getRootElement(),createStadthallenParkplatzmarker)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createStadthallenParkplatzmarker)
 
 
 function setPlayerInStadthallenParkplatz(player)

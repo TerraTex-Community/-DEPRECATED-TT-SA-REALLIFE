@@ -28,7 +28,7 @@ function fastfoodmarker_load()
 		zahler=zahler+1
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),fastfoodmarker_load)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),fastfoodmarker_load)
 
 function hitDriveInMarker(hitElement)
 	if(getElementType(hitElement)=="player")then

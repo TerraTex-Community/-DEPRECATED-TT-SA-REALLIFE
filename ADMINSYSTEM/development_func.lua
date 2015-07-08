@@ -120,7 +120,7 @@ function loadDevInt()
 	table.insert(presets,{"24/7 shop 2"	,-26.69,-57.81,1002.55,6})
 	table.insert(presets,{"24/7 shop 3"	,-27.31,-31.38,1002.55,4})
 end
-addEventHandler("onResourceStart",getRootElement(),loadDevInt)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),loadDevInt)
 
 	
 	function devin_func(thePlayer,command,nr)

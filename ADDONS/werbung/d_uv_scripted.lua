@@ -25,7 +25,7 @@ function onResourceStart_WerbeSchilderGenerieren()
 	end
 	setTimer(onResourceStart_WerbeSchilderGenerieren,3600000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),onResourceStart_WerbeSchilderGenerieren)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onResourceStart_WerbeSchilderGenerieren)
 
 
 

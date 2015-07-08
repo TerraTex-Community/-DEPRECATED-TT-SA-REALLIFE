@@ -31,7 +31,7 @@ function onclucknbellCreate()
 		createBlip(theTable[2],theTable[3],theTable[4],14,0.5,255,0,0,255,0,255,getRootElement())
 	end	
 end
-addEventHandler("onResourceStart",getRootElement(),onclucknbellCreate)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onclucknbellCreate)
 
 function portPlayerInclucknbell(thePlayer)
 	if(isElement(thePlayer))then

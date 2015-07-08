@@ -43,7 +43,7 @@ local function handlerCreateMedicVehicle()
 		addEventHandler("onVehicleStartEnter", theVehicle, onEnterMedicVehicle)
 	end
 end
-addEventHandler("onResourceStart", getRootElement(), handlerCreateMedicVehicle)
+addEventHandler("onResourceStart", getResourceRootElement(getThisResource()), handlerCreateMedicVehicle)
  
 local function handlerMHeal(thePlayer, cmd, toPlayerName)
 	if (vioGetElementData(thePlayer,  "fraktion") == 10) then

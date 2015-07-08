@@ -21,7 +21,7 @@ function createInfoPickupForNews()
 	local pickele=createPickup(1026.4248046875,1031.6865234375,11,3,1239,5000)
 	addEventHandler("onPickupHit",pickele,InfoPickupForNews,false)
 end
-addEventHandler("onResourceStart",getRootElement(),createInfoPickupForNews)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createInfoPickupForNews)
 
 function InfoPickupForNews(player)
 	outputChatBox("AD Gutscheine weitergeben mit '/adgs [Anzahl] [Name]' (Können nur News ab Rang 5)",player,255,0,0)

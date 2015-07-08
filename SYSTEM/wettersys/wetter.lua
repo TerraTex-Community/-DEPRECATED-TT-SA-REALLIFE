@@ -30,7 +30,7 @@ function setWetterOnResourceStart()
 	addEventHandler("onPickupHit",pickup,sendOeffiWetterMessage,false)
 	
 end
-addEventHandler("onResourceStart",getRootElement(),setWetterOnResourceStart)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),setWetterOnResourceStart)
 
 function sendOeffiWetterMessage(player)
 	outputChatBox("Der Zeitige wichtige Staats- und Öffentlichkeitsmitteilungen: ",player,255,255,0)
@@ -385,7 +385,7 @@ function sendWetterEventToClient()
 	triggerClientEvent(getRootElement(),"sendWetterEventToClient_Event",getRootElement(),isWetterEventID)
 	setTimer(sendWetterEventToClient,60000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),sendWetterEventToClient)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),sendWetterEventToClient)
 
 
 

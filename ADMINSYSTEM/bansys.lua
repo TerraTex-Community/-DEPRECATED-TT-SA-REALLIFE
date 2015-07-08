@@ -807,7 +807,7 @@ end
 
 function startShutDown_end()
 	setServerPassword(nil)
-	triggerEvent("onResourceStop",getRootElement())
+	triggerEvent("onResourceStop",getResourceRootElement(getThisResource()))
 	setTimer(shutdown,5000,1)
 end
 

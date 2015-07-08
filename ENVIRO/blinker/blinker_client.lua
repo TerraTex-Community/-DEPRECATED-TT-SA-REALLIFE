@@ -12,7 +12,7 @@ function setblinked()
 	carSendStableStation=not(carSendStableStation)
 	setTimer(setblinked,375,1)
 end
-addEventHandler("onClientResourceStart",getRootElement(),setblinked)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),setblinked)
 
 function setVehicleBlinkerState(theKey,thetyper)
     if(isElement(theKey))then

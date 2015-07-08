@@ -34,7 +34,7 @@ createBlip (966.8759765625,2160.5458984375,10.820312,32,2,255,0,0,255,0,255,getR
 
 
 end
-addEventHandler("onResourceStart",getRootElement(),createBlipsOnStart)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createBlipsOnStart)
 
 
 

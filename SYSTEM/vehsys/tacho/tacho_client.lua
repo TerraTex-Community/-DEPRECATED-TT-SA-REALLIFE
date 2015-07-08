@@ -341,7 +341,7 @@ function firstTempStart()
 	bindKey(".","down",setspeedoB)
 	bindKey("-","down",setspeedoC)
 end
-addEventHandler("onClientResourceStart",getRootElement(),firstTempStart)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),firstTempStart)
 
 function disbaleTeme(player)
 	if(player==getLocalPlayer())then
@@ -349,7 +349,7 @@ function disbaleTeme(player)
 		setControlState("accelerate",false)
 	end
 end	
-addEventHandler("onClientVehicleEnter",getRootElement(),disbaleTeme)
+addEventHandler("onClientVehicleEnter",getResourceRootElement(getThisResource()),disbaleTeme)
 
 
 

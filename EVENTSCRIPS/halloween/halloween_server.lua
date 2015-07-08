@@ -35,7 +35,7 @@ function halloween_init()
         setTimer(respawnKurbisse,respawntime*60*1000,1)
     end
 end
-addEventHandler("onResourceStart",getRootElement(),halloween_init)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),halloween_init)
 
 function respawnKurbisse()
    for theKey, theEi in ipairs(eier)do

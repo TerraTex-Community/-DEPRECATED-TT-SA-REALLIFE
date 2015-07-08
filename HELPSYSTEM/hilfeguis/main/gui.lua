@@ -10,7 +10,7 @@ f1_menu = {
 	bindedGUIS={}
 }
 
-addEventHandler("onClientResourceStart", getRootElement(),
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()),
     function()
 		local screenW, screenH = guiGetScreenSize()
         f1_menu.window[1] = guiCreateWindow(10, (screenH - 535) / 2, 241, 535, "F1 - Hilfen", false)

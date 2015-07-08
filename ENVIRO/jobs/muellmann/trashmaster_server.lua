@@ -17,7 +17,7 @@ function createTrashMaster()
 		end
 	setTimer(respawnTrashCars,300000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),createTrashMaster)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createTrashMaster)
 
 function respawnTrashCars()
 	for key, theVehicle in pairs(trashCars) do

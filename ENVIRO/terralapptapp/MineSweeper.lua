@@ -577,7 +577,7 @@ local function CreateMineSweeperMainFrame()
 	addEventHandler ( "onClientGUIClick", btnCloseGame, btnCloseGame_Clicked, false)
 	guiSetVisible(frmMain, false)
 end
-addEventHandler("onClientResourceStart",getRootElement(),CreateMineSweeperMainFrame)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),CreateMineSweeperMainFrame)
 
 function ToggleShowMineSweeper()
 	if (guiGetVisible(frmMain)) then

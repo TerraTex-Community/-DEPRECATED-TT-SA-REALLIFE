@@ -170,7 +170,7 @@ function loadSettingsFromDB()
 	end
 	setTimer(saveSettingsInDB,3600000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),loadSettingsFromDB)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),loadSettingsFromDB)
 
 function saveSettingsInDB()
 	MySQL_SetVar("serversettings", "Wert" , serversettings["drogenpreis"] , "Name='drogenpreis'")
@@ -184,7 +184,7 @@ function saveSettingsInDB()
 	--outputDebugString("Serversettings saved!")
 	setTimer(saveSettingsInDB,3600000,1)
 end
-addEventHandler("onResourceStop",getRootElement(),saveSettingsInDB)
+addEventHandler("onResourceStop",getResourceRootElement(getThisResource()),saveSettingsInDB)
 
 function stopResource_func()
 	--MySQL_SetVar("serversettings", "Wert" , serversettings["User_Schnitt"], "Name='Last_Daily_User'")
@@ -204,7 +204,7 @@ function stopResource_func()
 		end
 	end
 end
-addEventHandler("onResourceStop",getRootElement(),stopResource_func)
+addEventHandler("onResourceStop",getResourceRootElement(getThisResource()),stopResource_func)
 
 function reduceSchutzGeld(timestate)
 		local query="UPDATE userdata SET schutzgeld=schutzgeld-1 WHERE schutzgeld>0"
@@ -219,7 +219,7 @@ function reduceSchutzGeld(timestate)
 
 	setTimer(reduceSchutzGeld,60000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),reduceSchutzGeld)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),reduceSchutzGeld)
 
 function afk_timer()
 	for theKey,thePlayer in ipairs(getElementsByType("player"))do
@@ -244,7 +244,7 @@ function afk_timer()
 	end
 	setTimer(afk_timer,60000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),afk_timer)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),afk_timer)
 
 function timebanreduce()
 	local query="UPDATE timeban SET Minuten=Minuten-1;"
@@ -261,7 +261,7 @@ function timebanreduce()
 	end
 	setTimer(timebanreduce,60000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),timebanreduce)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),timebanreduce)
 
 function web_GMX_Start(SecureCode,AdminID)
 	if(SecureCode==MySQL_GetString("serversettings", "Wert","Name='SecureCode'"))then
@@ -303,7 +303,7 @@ function start_GMX()
 		end
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),start_GMX)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),start_GMX)
 
 
 function resetLogins()
@@ -311,7 +311,7 @@ function resetLogins()
 		vioSetElementData(thePlayer,"loggedin",false)
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),resetLogins)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),resetLogins)
 
 
 

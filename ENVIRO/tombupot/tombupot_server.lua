@@ -13,7 +13,7 @@ function createTombuPotLottery()
 	addEventHandler("onMarkerHit",mark,requestNewTombuTicket)
 	setTimer(isLotteryTime,60000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),createTombuPotLottery)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createTombuPotLottery)
 
 function requestNewTombuTicket(thePlayer)
     if(isElement(thePlayer))then

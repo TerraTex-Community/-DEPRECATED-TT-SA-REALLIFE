@@ -25,7 +25,7 @@ function startFood()
 	setTimer(reduceFood,1000,1)
 
 end
-addEventHandler("onClientResourceStart",getRootElement(),startFood)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),startFood)
 
 addEvent("stopFoodTimerForSeconds_Event",true)
 function stopFoodTimerForSeconds(seconds)

@@ -169,7 +169,7 @@ function onSettingsGUICreate()
 	addEventHandler("onClientGUIClick",settingsGUI["normWaterCheck"],setSingleSelectWater,false)
 	addEventHandler("onClientGUIClick",settingsGUI["realWaterCheck"],setSingleSelectWater,false)
 end
-addEventHandler("onClientResourceStart",getRootElement(),onSettingsGUICreate)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),onSettingsGUICreate)
 
 function setSingleSelectBloom()
 	local setBlur={[0]=settingsGUI["blurAusCheck"],settingsGUI["blurNormalCheck"],settingsGUI["blurStarkCheck"],settingsGUI["blurGTAIVCheck"],settingsGUI["blurGTAIVExtremCheck"]}

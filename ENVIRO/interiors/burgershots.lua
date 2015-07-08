@@ -25,7 +25,7 @@ function onBurgerShotCreate()
 		createBlip(theTable[2],theTable[3],theTable[4],10,0.5,255,0,0,255,0,255,getRootElement())
 	end	
 end
-addEventHandler("onResourceStart",getRootElement(),onBurgerShotCreate)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onBurgerShotCreate)
 
 function portPlayerInBurgershot(thePlayer)
 	if(isElement(thePlayer))then

@@ -57,7 +57,7 @@ function loadPrestigeFromDB()
 		mysql_free_result(result)
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),loadPrestigeFromDB)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),loadPrestigeFromDB)
 
 function showPrestigeInfos(thePlayer)
 	local id=vioGetElementData(source,"prestigeID")

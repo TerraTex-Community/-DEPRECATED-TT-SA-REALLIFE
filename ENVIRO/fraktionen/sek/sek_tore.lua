@@ -62,7 +62,7 @@ function onResourceCreateMarkers_SEK()
 	end
 
 end
-addEventHandler("onResourceStart",getRootElement(),onResourceCreateMarkers_SEK)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onResourceCreateMarkers_SEK)
 local noSEKPort=false
 function portPlayerSEK(thePlayer)
 	if(getElementType(thePlayer)=="player")then

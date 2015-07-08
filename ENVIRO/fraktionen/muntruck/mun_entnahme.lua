@@ -38,7 +38,7 @@ function onCreateMunEntnahme()
 
 
 end
-addEventHandler("onResourceStart",getRootElement(),onCreateMunEntnahme)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onCreateMunEntnahme)
 
 function checkMunKistenDistance(thePlayer)
 	local frak= vioGetElementData(thePlayer,"fraktion")

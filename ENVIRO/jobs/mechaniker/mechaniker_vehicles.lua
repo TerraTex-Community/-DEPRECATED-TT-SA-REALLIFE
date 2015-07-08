@@ -23,7 +23,7 @@ function createMechVehicles()
 	
 	setTimer(respawnMechiCars,300000,1)	
 end
-addEventHandler("onResourceStart",getRootElement(),createMechVehicles)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createMechVehicles)
 
 function kick_from_mechaniker_car(thePlayer,Seat)
 	if(Seat==0)then

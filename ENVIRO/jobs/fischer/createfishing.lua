@@ -11,7 +11,7 @@ function createFishingObjects()
 	setElementPosition(fishingPerson[2],396.42242431641,-2073.1818847656,8.8359375)
 	setPedRotation(fishingPerson[2],180)
 end
-addEventHandler("onResourceStart",getRootElement(),createFishingObjects)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createFishingObjects)
 
 function isInFishArea(thePlayer)
 	local sx,sy,sz=getElementPosition(thePlayer)

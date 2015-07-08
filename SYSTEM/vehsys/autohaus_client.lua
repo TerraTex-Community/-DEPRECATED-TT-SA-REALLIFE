@@ -72,7 +72,7 @@ function createautohausgui()
 	addEventHandler ( "onClientGUIClick", autohausGUI_Button[2] , buyslotAutohausGUI, false )
 	addEventHandler ( "onClientGUIClick", autohausGUI_Button[3] , buycarAutohausGUI, false )
 end
-addEventHandler("onClientResourceStart",getRootElement(),createautohausgui)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createautohausgui)
 
 function buyslotAutohausGUI()
 	triggerServerEvent("buyCarSlot_Event",getLocalPlayer())

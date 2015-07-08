@@ -24,7 +24,7 @@ JobName={"Fischer","Drogendealer","Muellmann","Busfahrer","Mechaniker","Detektiv
 
 lastclicked=false
 
-addEventHandler("onClientResourceStart",getRootElement(),
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),
     function()
         Interaktion_GUI_Window = {}
         Interaktion_GUI_TabPanel = {}
@@ -263,7 +263,7 @@ function cop_grab_interaktion_Gui_func()
 
 end
 
-addEventHandler("onClientResourceStart",getRootElement(),
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),
     function()
         Click_Self_GUI_Window = {}
         Click_Self_GUI_TabPanel = {}

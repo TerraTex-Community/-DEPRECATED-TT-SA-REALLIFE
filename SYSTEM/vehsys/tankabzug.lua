@@ -88,7 +88,7 @@ function tankcounterabzugTankAnzeige()
 setTimer(tankcounterabzugTankAnzeige,1000,1)
 abzugTankAnzeige()
 end
-addEventHandler("onResourceStart",getRootElement(),tankcounterabzugTankAnzeige)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),tankcounterabzugTankAnzeige)
 
 
 

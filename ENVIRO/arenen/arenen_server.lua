@@ -2,7 +2,7 @@ function arenen_marker()
 	local areneMark=createMarker(2747.9228515625,-1826.47265625,11.347807884216,"cylinder")
 	addEventHandler("onMarkerHit",areneMark,onArnenMarkerHit)
 end
-addEventHandler("onResourceStart",getRootElement(),arenen_marker)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),arenen_marker)
 
 
 function onArnenMarkerHit(thePlayer)

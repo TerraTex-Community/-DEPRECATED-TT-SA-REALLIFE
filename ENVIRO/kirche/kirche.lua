@@ -3,7 +3,7 @@ function oncreateChurchIcon()
 	setElementInterior(churchicon,2)
 	addEventHandler("onPickupHit",churchicon,onHitChurchIcon)
 end
-addEventHandler("onResourceStart",getRootElement(),oncreateChurchIcon)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),oncreateChurchIcon)
 
 
 function onHitChurchIcon(thePlayer)

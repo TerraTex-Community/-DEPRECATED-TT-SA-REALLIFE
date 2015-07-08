@@ -81,7 +81,7 @@ function createTrains_func()
 	
 	
 end
-addEventHandler("onResourceStart",getRootElement(),createTrains_func)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createTrains_func)
 
 function isPlayerNearTrain(theTrainID)
 	local x,y,z=getElementPosition(trains[theTrainID])

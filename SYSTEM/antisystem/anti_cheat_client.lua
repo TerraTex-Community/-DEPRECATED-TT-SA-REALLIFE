@@ -4,7 +4,7 @@ function loadAntiCheat_pre()
 	setWorldSpecialPropertyEnabled ( "extrabunny",false)
 	setWorldSpecialPropertyEnabled ( "extrajump",false)
 end
-addEventHandler("onClientResourceStart",getRootElement(),loadAntiCheat_pre)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),loadAntiCheat_pre)
 
 
 

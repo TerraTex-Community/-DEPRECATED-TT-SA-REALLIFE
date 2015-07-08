@@ -15,7 +15,7 @@ function createAndLoadRuheZonen()
 	end
 
 end
-addEventHandler("onResourceStart",getRootElement(),createAndLoadRuheZonen)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createAndLoadRuheZonen)
 
 function isInRuheZone(thePlayer)
 	local x,y,z = getElementPosition(thePlayer)

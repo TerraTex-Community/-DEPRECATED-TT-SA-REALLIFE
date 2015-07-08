@@ -25,7 +25,7 @@ function createSkinMarkers()
 	end
 	
 end
-addEventHandler("onResourceStart",getRootElement(),createSkinMarkers)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createSkinMarkers)
 
 function setMySkin_func(skin)
 	setElementModel(source,skin)

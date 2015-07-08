@@ -9,7 +9,7 @@ function onStellBotSpawn()
 	isStellBoit[bot]=true
 	setElementInterior(bot,3)
 end
-addEventHandler("onResourceStart",getRootElement(),onStellBotSpawn)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onStellBotSpawn)
 
 function StellenNow(thePlayer)
 	if(vioGetElementData(thePlayer,"stellenInfos")==vioGetElementData(thePlayer,"wanteds"))then

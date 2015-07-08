@@ -42,7 +42,7 @@ end
 function createabschleppNullSystem_Timer()
 	setTimer(abschleppNullSystem,900000,0)
 end
-addEventHandler("onResourceStart",getRootElement(),createabschleppNullSystem_Timer)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createabschleppNullSystem_Timer)
 
 addEvent("abgeschleppt_Event",true)
 function abgeschleppt_police_click(theVehicle,grund)
@@ -113,7 +113,7 @@ function createAbholPickup_abschleppt()
 	addEventHandler ( "onPickupHit", abschlepppickup, showAbschleppInfo )
 
 end
-addEventHandler("onResourceStart",getRootElement(),createAbholPickup_abschleppt)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createAbholPickup_abschleppt)
 
 
 function showAbschleppInfo(thePlayer)

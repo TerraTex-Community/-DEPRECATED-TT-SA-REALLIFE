@@ -70,7 +70,7 @@ guiSetVisible(GUISpielerlisteWindow[1],false)
   bindKey ( "tab", "up", function() hideSpielerliste() end) 
 
 end
-addEventHandler("onClientResourceStart",getRootElement(),createSpielerliste)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createSpielerliste)
 
 function showSpielerliste()
 	local row

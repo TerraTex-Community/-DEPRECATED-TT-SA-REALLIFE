@@ -11,7 +11,7 @@ function syncYourTimeDeliver()
     local time = getRealTime()
     triggerClientEvent(getRootElement(),"syncYourTime",getRootElement(),time.hour,time.minute)
 end
-addEventHandler("onResourceStart",getRootElement(),syncYourTimeDeliver)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),syncYourTimeDeliver)
 
 
 

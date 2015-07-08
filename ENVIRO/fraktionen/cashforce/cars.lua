@@ -39,7 +39,7 @@ function createcashforcecars()
 	addEventHandler("onMarkerHit",marker,setUp_cf)
 	
 end
-addEventHandler("onResourceStart",getRootElement(),createcashforcecars)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createcashforcecars)
  
 function donotentercashforce(player,seat)
 	if(vioGetElementData(player,"fraktion")~=11)and(seat==0)then

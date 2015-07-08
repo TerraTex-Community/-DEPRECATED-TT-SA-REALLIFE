@@ -6,7 +6,7 @@
 --        1504.2814941406,-1644.3990478516,9)
 --    setWaterLevel ( water,  9)
 --end
---addEventHandler("onResourceStart",getRootElement(), spawnWater)
+--addEventHandler("onResourceStart",getResourceRootElement(getThisResource()), spawnWater)
 
 
 

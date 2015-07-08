@@ -54,7 +54,7 @@ function AlkholTimer_function()
 	
 	
 end
-addEventHandler("onClientResourceStart",getRootElement(),AlkholTimer_function)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),AlkholTimer_function)
 
 
 
@@ -140,7 +140,7 @@ function startAlkoholTimer()
 	testCounter=testCounter+1
 	setTimer(startAlkoholTimer,1000,1)
 end
-addEventHandler("onClientResourceStart",getRootElement(),startAlkoholTimer)]]
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),startAlkoholTimer)]]
 
 
 

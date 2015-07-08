@@ -8,7 +8,7 @@ function onMafiaInteriorMarkerCreate()
 	setElementInterior(marker,12)
 	setElementDimension(marker,9999)
 end
-addEventHandler("onResourceStart",getRootElement(),onMafiaInteriorMarkerCreate)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onMafiaInteriorMarkerCreate)
 
 local mafiaMarkersAktivated=false
 function resetmafiaMarkersAktivated()

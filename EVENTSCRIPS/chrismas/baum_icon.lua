@@ -2,7 +2,7 @@ function createWeihnachtsbaumIcon()
 	local icon=createPickup(1489.7138671875,-1608.7177734375,14.039297103882,"cylinder",2.0)
 	addEventHandler("onClientPickupHit",icon,hitWeihnachtsPickup)
 end
-addEventHandler("onClientResourceStart",getRootElement(),createWeihnachtsbaumIcon)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createWeihnachtsbaumIcon)
 
 
 function hitWeihnachtsPickup(thePlayer)

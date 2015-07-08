@@ -167,7 +167,7 @@ function onClientResourceStart_winter()
 	outputChatBox("Wintermodus aus und an schalten mit /winter",160,0,160)
 	outputChatBox("Schneefallmodus aus und ein schalten mit /snow",160,0,160)
 end
-addEventHandler("onClientResourceStart",getRootElement(),onClientResourceStart_winter)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),onClientResourceStart_winter)
 
 
 

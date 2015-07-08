@@ -102,7 +102,7 @@ BankGUI_Button[5] = guiCreateButton(345,20,136,49,"Spenden",false,BankGUI_Tab[5]
 guiSetVisible(BankGUI_Window[1],false)
 
 end
-addEventHandler("onClientResourceStart", getRootElement( ),createBankGui)
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()),createBankGui)
 
 
 function ueberweisen()

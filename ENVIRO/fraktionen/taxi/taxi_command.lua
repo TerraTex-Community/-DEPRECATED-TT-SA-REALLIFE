@@ -189,7 +189,7 @@ function text_werbung()
 	end
 	setTimer(text_werbung,900000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),text_werbung)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),text_werbung)
 
 function taxi_cmd(thePlayer)
 	local taxistring=""

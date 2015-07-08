@@ -42,7 +42,7 @@ table.insert(frakselfcars[2],vehicle)
 		vioSetElementData(console[1],"adminlvl",4)
 		
  end
- addEventHandler("onResourceStart",getRootElement(),creategrovecars)
+ addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),creategrovecars)
 
  addEvent("triggerMeGroveCar",true)
  function sendGroveEiswagenPosition()

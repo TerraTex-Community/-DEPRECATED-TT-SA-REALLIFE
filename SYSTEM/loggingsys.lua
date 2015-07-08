@@ -113,7 +113,7 @@ function load_beleidigungslisten()
 	local dsatz = mysql_fetch_assoc(result)
 
 end
-addEventHandler("onResourceStart",getRootElement(),load_beleidigungslisten)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),load_beleidigungslisten)
 
 local maybeBeleidigung={}
 local maybeBeleidigungenIDs=0

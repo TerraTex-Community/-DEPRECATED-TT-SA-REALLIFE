@@ -2,7 +2,7 @@ function createMarklerMark()
 MarklerMarker=createMarker(358.3369140625,168.7734375,1007.3828125,"cylinder",2.0)
 setElementInterior(MarklerMarker,3)
 end
-addEventHandler("onResourceStart",getRootElement(),createMarklerMark)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createMarklerMark)
 
 
 function enterScheineMarker(hitElement)

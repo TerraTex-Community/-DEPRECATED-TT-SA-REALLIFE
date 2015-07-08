@@ -47,7 +47,7 @@ function spawnAutomat()
 	setElementInterior(automat, 1)
 	table.insert(bankautomaten, automat)  -- Automat in Interior
 end
-addEventHandler("onResourceStart",getRootElement(),spawnAutomat)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),spawnAutomat)
 
  
 

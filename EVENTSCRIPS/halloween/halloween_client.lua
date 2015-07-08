@@ -13,7 +13,7 @@ function halloween_init()
 	
     end
 end
-addEventHandler("onClientResourceStart",getRootElement(),halloween_init)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),halloween_init)
 
 
 

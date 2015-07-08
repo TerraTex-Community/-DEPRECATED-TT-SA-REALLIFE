@@ -51,7 +51,7 @@ function opentuningMarker()
 	end
 
 end
-addEventHandler("onResourceStart",getRootElement(),opentuningMarker)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),opentuningMarker)
 
 
 function tuningMarker_func(hitElement)

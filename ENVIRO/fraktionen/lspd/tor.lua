@@ -110,7 +110,7 @@ function loadPDAbhoerMarker()
 	local marker=createMarker(1572.4404296875,-1671.181640625,27.895606994629,"cylinder",1.0)
 	addEventHandler("onMarkerHit",marker,PDsetDownToHeli)
 end
-addEventHandler("onResourceStart",getRootElement(),loadPDAbhoerMarker)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),loadPDAbhoerMarker)
 
 local enteredPDHeliForceMarker=false
 function resetPDheliTimerMarker()

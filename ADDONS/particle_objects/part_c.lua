@@ -4,4 +4,4 @@
 			local part_dff = engineLoadDFF("ADDONS/particle_objects/particles/puke.dff",2053)
 			engineReplaceModel(part_dff,2053)
 end
-addEventHandler("onClientResourceStart",getRootElement(),resourceLoading)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),resourceLoading)

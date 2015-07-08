@@ -22,7 +22,7 @@ function alldimensionsobject_create()
     end
     --alldimensionsobject
 end
-addEventHandler("onClientResourceStart",getRootElement(),alldimensionsobject_create)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),alldimensionsobject_create)
 
 function alldimensionsobject_recreate()
     allDimObj={}

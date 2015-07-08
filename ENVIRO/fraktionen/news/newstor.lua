@@ -57,7 +57,7 @@ function onResourceStartCreateNewsMarker()
     newsMarkerB=createMarker(1039.8100585938,1014.4199829102,10.5,"cylinder",2)
 	addEventHandler("onMarkerHit",newsMarkerB,hitNewsMarker)
 end
-addEventHandler("onResourceStart",getRootElement(),	onResourceStartCreateNewsMarker)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),	onResourceStartCreateNewsMarker)
 	
 function hitNewsMarker(thePlayer)
 	if not(newsPortStatus) then

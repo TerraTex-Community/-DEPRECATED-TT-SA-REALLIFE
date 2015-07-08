@@ -20,7 +20,7 @@ function createCluckingMarker()
 	end
 	
 end
-addEventHandler ( "onClientResourceStart", getRootElement(), createCluckingMarker )
+addEventHandler ( "onClientResourceStart", getResourceRootElement(getThisResource()), createCluckingMarker )
 
 function showCluckingMenu(player,mathchdim)
 	if(mathchdim) and not(cMenuShowing) and player==getLocalPlayer() then

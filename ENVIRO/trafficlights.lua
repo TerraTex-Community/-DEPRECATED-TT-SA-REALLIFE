@@ -69,7 +69,7 @@ function startTrafficLights()
     setTrafficLightsLocked ( true )
     setTimer(handleTrafficLightsOutOfOrder,500,0)
 end
-addEventHandler("onResourceStart",getRootElement(),startTrafficLights)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),startTrafficLights)
 
 
 

@@ -52,7 +52,7 @@ function createAttackPickups()
 	
 	setTimer(giveLadenResources,3600000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),createAttackPickups)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createAttackPickups)
 
 local isLadenAttack=false
 local ladenUnterAttackID=0

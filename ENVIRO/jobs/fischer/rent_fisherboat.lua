@@ -7,7 +7,7 @@ function createFisherMietPickUp()
 	addEventHandler("onPickupHit",fishInfoPickup,hitBoatRentMarker)
 
 end
-addEventHandler("onResourceStart",getRootElement(),createFisherMietPickUp)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createFisherMietPickUp)
 
 function hitBoatRentMarker(player)
 	if(vioGetElementData(player,"job")==1)then

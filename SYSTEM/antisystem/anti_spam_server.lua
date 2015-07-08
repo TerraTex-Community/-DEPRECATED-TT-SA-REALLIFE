@@ -7,7 +7,7 @@ function antiflutreset()
 	anti_flut_Data={}
 	antifluttimer=setTimer(antiflutreset,5000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),antiflutreset)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),antiflutreset)
 
 
 

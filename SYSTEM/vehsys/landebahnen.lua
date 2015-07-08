@@ -185,7 +185,7 @@ function createAllBlipsAndMarkers()
         end
     end
 end
-addEventHandler("onResourceStart",getRootElement(),createAllBlipsAndMarkers)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createAllBlipsAndMarkers)
 
 function resetAirport(theAirport)
     for theKey,theBlip in ipairs(blips[theAirport])do

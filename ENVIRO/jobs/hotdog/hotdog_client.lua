@@ -37,7 +37,7 @@ function onResourceStartCreateHotdogGUI()
 	HotDogGUI=build_hotdogGUI()
 	guiSetVisible(HotDogGUI["_root"],false)
 end
-addEventHandler("onClientResourceStart",getRootElement(),onResourceStartCreateHotdogGUI)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),onResourceStartCreateHotdogGUI)
 
 function on_hotdogpushButton_clicked()	--kaufen
 	local text=guiGetText(HotDogGUI["lineEdit"])

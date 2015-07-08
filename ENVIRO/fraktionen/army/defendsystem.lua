@@ -118,7 +118,7 @@ function setPedShooting()
 		end
 	end
 end
-addEventHandler("onClientResourceStart",getRootElement(),setPedShooting)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),setPedShooting)
 
 function findRotation(x1,y1,x2,y2)
  

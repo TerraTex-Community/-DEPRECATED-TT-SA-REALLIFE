@@ -28,7 +28,7 @@ function onpizzastackCreate()
 		createBlip(theTable[2],theTable[3],theTable[4],29,0.5,255,0,0,255,0,255,getRootElement())
 	end	
 end
-addEventHandler("onResourceStart",getRootElement(),onpizzastackCreate)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onpizzastackCreate)
 
 function portPlayerInpizzastack(thePlayer)
 

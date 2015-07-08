@@ -7,7 +7,7 @@
 --
 local timer=-1
 
-addEventHandler("onClientResourceStart",getRootElement(),
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),
     function()
 	
 		local screenW, screenH = guiGetScreenSize()

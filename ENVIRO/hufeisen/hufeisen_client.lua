@@ -51,7 +51,7 @@ function spawnHufeisen_func()
 		setTimer(spawnHufeisen_func,5000,1)
 	end
 end
-addEventHandler("onClientResourceStart",getRootElement(),spawnHufeisen_func)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),spawnHufeisen_func)
 
 function setpickuphigher_hufeisen()
 	--outputChatBox("hit")
@@ -105,7 +105,7 @@ function startCheckHufeisenTimer()
 	setTimer(startCheckHufeisenTimer,500,1)
 	
 end
-addEventHandler("onClientResourceStart",getRootElement(),startCheckHufeisenTimer)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),startCheckHufeisenTimer)
 
 function syncHufeisen(thecolshape)
 	if(isElement(thecolshape) and isElement(colshapedata[thecolshape]))then

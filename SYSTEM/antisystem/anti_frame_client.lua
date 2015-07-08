@@ -18,7 +18,7 @@ function onFrameRecordStart()
 	setTimer(recordNewFrameRate,1000,0)
 	setTimer(recordFrameCrashes,60000,0)
 end
-addEventHandler("onClientResourceStart",getRootElement(),onFrameRecordStart)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),onFrameRecordStart)
 
 function recordNewFrameRate()
 	lastFramesPerSecond=actualFramesPerSecond

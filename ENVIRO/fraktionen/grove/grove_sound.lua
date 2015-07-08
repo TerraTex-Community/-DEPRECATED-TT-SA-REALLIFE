@@ -8,7 +8,7 @@ function playEiswagenSound_request()
 	triggerServerEvent("triggerMeGroveCar",getLocalPlayer())
 
 end
-addEventHandler("onClientResourceStart",getRootElement(),playEiswagenSound_request)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),playEiswagenSound_request)
 
 addEvent("sendGroveEiswagen",true)
 function sendGroveEiswagen_func(car)

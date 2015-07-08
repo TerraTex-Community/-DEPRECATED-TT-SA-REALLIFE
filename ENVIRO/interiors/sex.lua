@@ -27,7 +27,7 @@ function onsexCreate()
 		shopsexmarker[theKey][1]=createMarker(theTable[2],theTable[3],theTable[4],"corona",2.0)
 	end	
 end
-addEventHandler("onResourceStart",getRootElement(),onsexCreate)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onsexCreate)
 
 -- function onPlayerJOin_shopblip()
 	-- setTimer(loadEinkaufBlips,10000,1,source)

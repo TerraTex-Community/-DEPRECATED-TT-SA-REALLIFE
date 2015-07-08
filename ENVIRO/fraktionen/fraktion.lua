@@ -112,7 +112,7 @@ function teamserstellen()
 	frakschutz[12]={}
 	fraksteuer[12]=MySQL_GetVar("fraktionskasse", "Steuersatz", "FrakID='12'")
 end
-addEventHandler("onResourceStart",getRootElement(),teamserstellen)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),teamserstellen)
 
 function fsteuer_func(thePlayer,command,steuersatz)
 	if(vioGetElementData(thePlayer,"fraktionsrang")>5)then
@@ -153,7 +153,7 @@ function save_frakkasse(counter)
 		
 	setTimer(save_frakkasse,3600000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),save_frakkasse)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),save_frakkasse)
 
 function save_frakkasseB()
 	for theFraktion,theMoney in pairs(frakkasse) do
@@ -170,7 +170,7 @@ function save_frakkasseB()
 	end--outputDebugString("Fraktionskassen gespeichert!")
 
 end
-addEventHandler("onResourceStop",getRootElement(),save_frakkasseB)
+addEventHandler("onResourceStop",getResourceRootElement(getThisResource()),save_frakkasseB)
 
 function frakkasse_func(thePlayer, Command, money, grund, ...)
 	local frak = vioGetElementData(thePlayer, "fraktion")
@@ -348,7 +348,7 @@ function loadfromBlacklistDB()
 		end
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),loadfromBlacklistDB)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),loadfromBlacklistDB)
 
 function checkbyblacklist_func(thePlayer,cmd,types,frakid)
 	if(vioGetElementData(thePlayer,"fraktionsrang")>4 or isAdminLevel(thePlayer,1))then

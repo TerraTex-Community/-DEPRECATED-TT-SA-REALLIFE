@@ -46,7 +46,7 @@ function refuseDrugedTime()
 	end
 	setTimer(refuseDrugedTime,1000,1)
 end
-addEventHandler("onClientResourceStart",getRootElement(),refuseDrugedTime)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),refuseDrugedTime)
 
 
 function addDrugTime()

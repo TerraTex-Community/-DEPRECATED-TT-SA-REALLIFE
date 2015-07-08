@@ -9,7 +9,7 @@ function dutytimer_init()
 	dailytimestamp=time.timestamp
 	duty_datum=(time.year+1900).."-"..(time.month+1).."-"..time.monthday
 end
-addEventHandler("onResourceStart",getRootElement(),dutytimer_init)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),dutytimer_init)
 
 function dutytimer_saveToDB()
 	outputDebugString("Started Duty Saving")
@@ -31,7 +31,7 @@ function dutytimer_saveToDB()
 		--[TTeam]Geramy92,1381666697,30,0,0,20,0,0),(Johaenchen,1381666697,30,0,0,0,0,20)
 	outputDebugString("Dutys were saved!")
 end
-addEventHandler("onResourceStop",getRootElement(),dutytimer_saveToDB)
+addEventHandler("onResourceStop",getResourceRootElement(getThisResource()),dutytimer_saveToDB)
 
 function dutytimer_calculate()
 	if(table.getn(getElementsByType("player"))>25)then

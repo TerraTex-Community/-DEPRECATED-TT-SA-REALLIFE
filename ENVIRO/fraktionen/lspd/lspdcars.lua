@@ -475,7 +475,7 @@ setVehicleSirens(vehicle, 4, 0, 0.8, 0.4, 255, 0, 0, 255, 200)
 
 		end
 end
- addEventHandler("onResourceStart",getRootElement(),createpoliceVehicles)
+ addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createpoliceVehicles)
 
  function isPoliceCar(source)
 	local ruck=false

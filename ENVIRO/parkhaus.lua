@@ -15,7 +15,7 @@ function createFahrstuhl_parkhaus()
 	setTimer(moveFahrStuhl,fahrstuhlhaltetimer,1)
 
 end
-addEventHandler("onResourceStart",getRootElement(),createFahrstuhl_parkhaus)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createFahrstuhl_parkhaus)
 
 function moveFahrStuhl()
 	if(fahrstuhlmovement)then

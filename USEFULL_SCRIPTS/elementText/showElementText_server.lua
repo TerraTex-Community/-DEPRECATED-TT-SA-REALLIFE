@@ -62,7 +62,7 @@ function onShowTextServerSync()
 	--outputDebugString("test2")
 	triggerClientEvent(getRootElement(),"onShowTextServerSync_func",getRootElement(),showElementTextTable)
 end
-addEventHandler("onResourceStart",getRootElement(),onShowTextServerSync)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onShowTextServerSync)
 
 
 

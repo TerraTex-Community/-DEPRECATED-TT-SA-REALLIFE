@@ -2,7 +2,7 @@ function createStMark()
 Stadtscheinemarker=createMarker(362.9921875,173.8134765625,1007.3828125,"cylinder",2.0)
 setElementInterior(Stadtscheinemarker,3)
 end
-addEventHandler("onResourceStart",getRootElement(),createStMark)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createStMark)
 
 function enterScheineMarker(hitElement)
 	if(source==Stadtscheinemarker)then
@@ -96,7 +96,7 @@ function stadthallenbots()
 		addEventHandler("onPedWasted",stadthallenbotb,respawn_stadthallen_bots)
 	
 end
-addEventHandler("onResourceStart",getRootElement(),stadthallenbots)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),stadthallenbots)
 
 function respawn_stadthallen_bots()
 	destroyElement(stadthallenbot)

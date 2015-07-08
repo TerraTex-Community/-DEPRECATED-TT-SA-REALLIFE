@@ -21,7 +21,7 @@ function createPizzaMarker()
 	end
 	
 end
-addEventHandler ( "onClientResourceStart", getRootElement(), createPizzaMarker )
+addEventHandler ( "onClientResourceStart", getResourceRootElement(getThisResource()), createPizzaMarker )
 
 
 

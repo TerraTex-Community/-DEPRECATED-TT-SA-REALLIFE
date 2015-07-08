@@ -10,7 +10,7 @@ TicTacToeTapp = {
     gridlist = {},
     label = {}
 }
-addEventHandler("onClientResourceStart", getRootElement(),
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()),
     function()
 		local screenW, screenH = guiGetScreenSize()
         TicTacToeTapp.window[1] = guiCreateWindow((screenW - 407) / 2, (screenH - 430) / 2, 407, 430, "TicTacToe", false)

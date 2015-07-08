@@ -240,7 +240,7 @@ function onflysResourceStart()
 	local flysMarker=createMarker(1495.814453125,1682.54296875,10.8125,"cylinder")
 	addEventHandler("onMarkerHit",flysMarker,hitAuftragsFlugMarker)
 end
-addEventHandler("onResourceStart",getRootElement(),onflysResourceStart)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onflysResourceStart)
 
 function hitAuftragsFlugMarker(hitElement)
 	if(vioGetElementData(hitElement,"job")==12)then

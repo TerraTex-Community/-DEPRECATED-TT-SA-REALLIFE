@@ -35,7 +35,7 @@ function ostern_init()
         setTimer(respawnEier,respawntime*60*1000,1)
     end
 end
-addEventHandler("onResourceStart",getRootElement(),ostern_init)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),ostern_init)
 
 function respawnEier()
    for theKey, theEi in ipairs(eier)do

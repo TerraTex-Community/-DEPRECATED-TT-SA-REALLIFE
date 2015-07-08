@@ -14,7 +14,7 @@ function createSuperShopMarkers()
 	
 	
 end
-addEventHandler("onResourceStart",getRootElement(),createSuperShopMarkers)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createSuperShopMarkers)
 
 
 SuperShopWaren={2.99,24.89,89.75,15,0.99,1.95,4.85,9.99,49.75,53.45,485.75,10000,10000,2.50,2.50,85.29}

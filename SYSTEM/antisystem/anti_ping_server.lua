@@ -17,7 +17,7 @@ function init_anti_high_ping()
 
 
 end
-addEventHandler("onResourceStart",getRootElement(),init_anti_high_ping)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),init_anti_high_ping)
 
 
 function aktualizePingWhiteList(thePlayer)

@@ -27,7 +27,7 @@ local armyTorStatusOB=false
   
   
   end
-  addEventHandler("onResourceStart",getRootElement(),armytordurchsichtig)
+  addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),armytordurchsichtig)
     function setPlayerOutArmyBaseTorOB(theElement)
 		setElementPosition(theElement,299.9501953125,1822.9091796875,17.640625)  
   end
@@ -97,7 +97,7 @@ local armyTorStatusOB=false
 	
   
   end
-  addEventHandler("onResourceStart",getRootElement(),onArmyBaseCreate)
+  addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onArmyBaseCreate)
   
   
   local armyRoketActivating=true

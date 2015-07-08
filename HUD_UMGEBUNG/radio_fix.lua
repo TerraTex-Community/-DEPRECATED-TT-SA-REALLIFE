@@ -9,7 +9,7 @@
 local radioName=0
 local radioShowUntil=0
 
-addEventHandler("onClientResourceStart", getRootElement(),
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()),
     function()
         setPlayerHudComponentVisible ( "radio", false )
         setPlayerHudComponentVisible ( "area_name", false )

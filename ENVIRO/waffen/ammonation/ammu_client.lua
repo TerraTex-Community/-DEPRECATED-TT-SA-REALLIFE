@@ -126,7 +126,7 @@ function createAmmoGui()
 
 	createAmmoBots()
 end
-addEventHandler("onClientResourceStart",getRootElement(),createAmmoGui)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createAmmoGui)
 
 local lastOpenX,lastOpenY,lastOpenZ=0,0,0
 function checkAmmoOkay()

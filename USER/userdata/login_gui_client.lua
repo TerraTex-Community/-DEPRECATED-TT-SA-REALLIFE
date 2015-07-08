@@ -9,7 +9,7 @@
 
 
 
-addEventHandler("onClientResourceStart",getRootElement(),
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),
     function()
 		local screenW, screenH = guiGetScreenSize()
         Login_Gui = guiCreateWindow((screenW - 372) / 2, (screenH - 284) / 2, 372, 284, "Loginformular", false)
@@ -123,7 +123,7 @@ function showBackgroundcameraForLogin()
         end
     end
 end
-addEventHandler("onClientResourceStart",getRootElement(),showBackgroundcameraForLogin)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),showBackgroundcameraForLogin)
 
 function setCameraLoginOn(randPlayer)
     fadeCamera(true,3)

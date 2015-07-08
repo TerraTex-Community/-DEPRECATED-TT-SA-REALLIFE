@@ -35,7 +35,7 @@ function openPaynSpray()
 		createBlip(x,y,z,63,0.5,255,0,0,255,0,255,getRootElement())-- Pay'N'Spray
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),openPaynSpray)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),openPaynSpray)
 
 function paynsprayMarker(hitElement)
 	if(isElement(hitElement))then

@@ -102,7 +102,7 @@ function createMuellTable()
 	table.insert(muellmarkers,{2550.4443359375,-1099.05859375,63.204471588135}) 
 	table.insert(muellmarkers,{2422.90234375,-1105.958984375,41.191425323486})
 end
-addEventHandler("onClientResourceStart",getRootElement(),createMuellTable)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createMuellTable)
 
 function resizePlayerJobMarkers()
 	playerJobMarkers={}

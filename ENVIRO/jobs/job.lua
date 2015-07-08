@@ -47,7 +47,7 @@ function createJobPickups()
 	end
 	createBlip(2166.3935546875,-1671.7578125,15.074158668518,58,2,255,0,0,255,0,50)--drogendealer
 end
-addEventHandler("onResourceStart",getRootElement(),createJobPickups)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createJobPickups)
 
 function enterJobPickup(thePickupToUse)
 	for theKey,thePickup in ipairs(JobPickups) do

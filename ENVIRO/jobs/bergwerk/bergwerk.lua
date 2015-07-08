@@ -77,7 +77,7 @@ function createDozers()
 	respawnBergWerksVehicle()
 	checkDistanceBergWerk()
 end
-addEventHandler("onResourceStart",getRootElement(),createDozers)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createDozers)
 
 local grundpos={594,873,-44}
 local maxDis=360

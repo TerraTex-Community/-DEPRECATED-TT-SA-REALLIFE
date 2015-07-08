@@ -22,7 +22,7 @@ function update_play_time_func()
 
 
 end
-addEventHandler("onResourceStart",getRootElement(),update_play_time_func)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),update_play_time_func)
 
 function checkTimeErfolge(thePlayer,PlayTime)
 	if(PlayTime>50)then

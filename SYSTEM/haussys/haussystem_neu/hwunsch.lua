@@ -29,7 +29,7 @@ function inWunschSystemStart()
     end
 
 end
-addEventHandler("onResourceStart",getRootElement(),inWunschSystemStart)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),inWunschSystemStart)
 
 function setNewWunsch(thePlayer)
     local isNearOtherWunsch=false

@@ -24,7 +24,7 @@ marker=createMarker( 2233.818359375,1604.4130859375,1005.4796875,"cylinder",1)
 	setElementInterior(marker,1)
 	addEventHandler("onClientMarkerHit",marker,enterBJMarker_new)
 end
-addEventHandler("onClientResourceStart",getRootElement(),createBlackJackMarker)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createBlackJackMarker)
 
 
 GUIBlackjack_Window = {}

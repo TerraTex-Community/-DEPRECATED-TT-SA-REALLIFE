@@ -25,7 +25,7 @@ function onResourceCreateHotDogMarkerAndVehicles()
 	end	
 	respawnHotDogCars()
 end
-addEventHandler("onResourceStart",getRootElement(),onResourceCreateHotDogMarkerAndVehicles)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onResourceCreateHotDogMarkerAndVehicles)
 
 function donotEnterIfNotHotDog(thePlayer)
 	if not(vioGetElementData(thePlayer,"job")==18)then

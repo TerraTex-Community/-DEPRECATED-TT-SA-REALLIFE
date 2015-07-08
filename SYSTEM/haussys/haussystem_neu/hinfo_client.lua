@@ -45,7 +45,7 @@ function setAllFunitureEnabled()
         setInteriorFurnitureEnabled(i, true)
     end
 end
-addEventHandler("onClientResourceStart",getRootElement(),setAllFunitureEnabled)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),setAllFunitureEnabled)
 
 
 

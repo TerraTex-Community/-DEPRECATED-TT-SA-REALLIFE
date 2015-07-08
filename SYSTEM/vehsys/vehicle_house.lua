@@ -90,7 +90,7 @@ function stealTooExpensiveVehicles()
         end
     end
 end
-addEventHandler("onResourceStart",getRootElement(),stealTooExpensiveVehicles)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),stealTooExpensiveVehicles)
 
 
 

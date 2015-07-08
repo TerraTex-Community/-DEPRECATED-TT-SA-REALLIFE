@@ -30,7 +30,7 @@ function knastTimer()
 	end
 	setTimer(knastTimer,60000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),knastTimer)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),knastTimer)
 
 
 function bail_func(thePlayer)

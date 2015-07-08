@@ -12,7 +12,7 @@ function createMoebelMarker()
     local marker=createMarker(966.8759765625,2160.5458984375,10.8203125,"corona",1.0)
     addEventHandler("onMarkerHit",marker,hitMoebelMarker)
 end
-addEventHandler("onResourceStart",getRootElement(),createMoebelMarker)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createMoebelMarker)
 
 function hitMoebelMarker(thePlayer)
     if(getElementType(thePlayer)=="player")then

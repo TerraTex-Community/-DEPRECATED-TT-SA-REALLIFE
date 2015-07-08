@@ -39,7 +39,7 @@ function createSweeperMarker()
 	table.insert(sweepermarker,{2160.044921875,2120.7548828125,10.545315742493})
 	-- outputChatBox(getDistanceBetweenPoints3D(1990.2216796875,2120.9443359375,10.545271873474, 2446.3017578125,1980.9970703125,10.545428276062), getRootElement())
 end
-addEventHandler("onClientResourceStart",getRootElement(),createSweeperMarker)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createSweeperMarker)
 
 function onEnterMarker_sweeperjob_func(thePlayer)
 	if(source==sweeperJobAbgabeMarker)and(thePlayer==getLocalPlayer())then

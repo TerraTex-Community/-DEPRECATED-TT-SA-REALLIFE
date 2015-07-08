@@ -34,7 +34,7 @@ function isreadyforlogin()
 	triggerServerEvent("clientisreadyforlogin",getLocalPlayer(),getLocalPlayer())
 
 end
-addEventHandler("onClientResourceStart",getRootElement(),isreadyforlogin)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),isreadyforlogin)
 
 
 

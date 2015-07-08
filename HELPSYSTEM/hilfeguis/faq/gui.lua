@@ -10,7 +10,7 @@ f1_faq = {
 
 
 
-addEventHandler("onClientResourceStart", getRootElement(),
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()),
     function()
         f1_faq.window[1] = guiCreateWindow(253, 183, 600, 535, "FAQ", false)
         guiWindowSetSizable(f1_faq.window[1], false)

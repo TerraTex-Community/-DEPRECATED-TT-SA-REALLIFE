@@ -6,7 +6,7 @@ function createWeaponBots_Server()
 	setPedRotation(wdealerPed,8.0228881835938 )
 	addEventHandler("onPedWasted",wdealerPed,respawnWeaponBot_Server)
 end
-addEventHandler("onResourceStart",getRootElement(),createWeaponBots_Server)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createWeaponBots_Server)
 
 function respawnWeaponBot_Server()
 	destroyElement(wdealerPed)
@@ -34,7 +34,7 @@ function reduceWeaponPreis(timeshift)
 		end
 	setTimer(reduceWeaponPreis,1800000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),reduceWeaponPreis)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),reduceWeaponPreis)
 
 addEvent("buyWaffenDealer_Event",true)
 function buyWaffenDealer_func(anzahl)

@@ -28,7 +28,7 @@ function loadBizFromDB_func()
 	end
 mysql_free_result (result)
 end
-addEventHandler("onResourceStart",getRootElement(),loadBizFromDB_func)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),loadBizFromDB_func)
 
 function showBizInfo(thePlayer)
 	local bizNum=bizPickupInfo[source]
@@ -67,7 +67,7 @@ function savebizzes_norm(timer)
 	outputDebugString("Biz Saved")
 	setTimer(savebizzes_norm,3600000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),savebizzes_norm)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),savebizzes_norm)
 
 function savebizzes(timer)
 	outputDebugString("Started Biz Save")
@@ -80,7 +80,7 @@ function savebizzes(timer)
 
 	outputDebugString("Biz Saved")
 end
-addEventHandler("onResourceStop",getRootElement(),savebizzes)
+addEventHandler("onResourceStop",getResourceRootElement(getThisResource()),savebizzes)
 
 function bizbank_func(thePlayer,Command,betrag)
 	if(vioGetElementData(thePlayer,"bizKey")==0)then

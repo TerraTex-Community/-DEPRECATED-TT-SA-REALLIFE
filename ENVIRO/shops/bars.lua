@@ -45,7 +45,7 @@ function barbots()
 	
 	setPedDancingQueen()
 end
-addEventHandler("onResourceStart",getRootElement(),barbots)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),barbots)
 
 function respawnbarbots()
 	destroyElement(barbot[1])

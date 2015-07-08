@@ -6,7 +6,7 @@ function createAmmoBots_Server()
 	setPedRotation(ammoPed,95 )
 	addEventHandler("onPedWasted",ammoPed,respawnAmmoBot_Server)
 end
-addEventHandler("onResourceStart",getRootElement(),createAmmoBots_Server)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createAmmoBots_Server)
 
 function respawnAmmoBot_Server()
 	destroyElement(ammoPed)

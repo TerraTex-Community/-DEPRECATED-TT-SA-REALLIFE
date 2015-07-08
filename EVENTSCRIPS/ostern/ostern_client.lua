@@ -13,7 +13,7 @@ function ostern_init()
 	
     end
 end
-addEventHandler("onClientResourceStart",getRootElement(),ostern_init)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),ostern_init)
 
 
 

@@ -56,7 +56,7 @@ function createTankstellenMarker()
 	
 
 end
-addEventHandler("onResourceStart",getRootElement(),createTankstellenMarker)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createTankstellenMarker)
 
 function onPlayerJoinTransferBlips()
 	setTimer(loadBlips,10000,1,source)
@@ -127,7 +127,7 @@ function setCreateTextDisplayInMinutes()
 		setTimer(globalTankTimer,20000,1)
 	
 end
-addEventHandler("onResourceStart",getRootElement(),setCreateTextDisplayInMinutes)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),setCreateTextDisplayInMinutes)
 
 
 

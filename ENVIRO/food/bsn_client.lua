@@ -21,7 +21,7 @@ function createBurgerMarker()
 	end
 	
 end
-addEventHandler ( "onClientResourceStart", getRootElement(), createBurgerMarker )
+addEventHandler ( "onClientResourceStart", getResourceRootElement(getThisResource()), createBurgerMarker )
 
 
 

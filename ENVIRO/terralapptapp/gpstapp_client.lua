@@ -144,7 +144,7 @@ function clientSetGPSRoute()
 	end
 	--setTimer(clientSetGPSRoute,12000,1)
 end
---addEventHandler("onClientResourceStart",getRootElement(),clientSetGPSRoute)
+--addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),clientSetGPSRoute)
 
 function endNavigation()
 	outputChatBox("Die Navigation wurde beendet")

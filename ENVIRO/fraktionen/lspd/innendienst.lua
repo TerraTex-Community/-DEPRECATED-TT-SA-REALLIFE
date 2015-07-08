@@ -6,7 +6,7 @@ function createInnenDienstPickup()
 	setElementInterior(anderes,3)
 	
 end
-addEventHandler("onResourceStart",getRootElement(),createInnenDienstPickup)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createInnenDienstPickup)
 
 function sendInnenDienstInfo(thePlayer)
 	if(innendienstpickup==source)then
@@ -76,7 +76,7 @@ function checkInnenDienst_func()
 	end
 	
 end
-addEventHandler("onResourceStart",getRootElement(),checkInnenDienst_func)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),checkInnenDienst_func)
 
 addEventHandler( "onPlayerScreenShot", getRootElement(),
     function ( theResource, status, pixels, timestamp, tag )
@@ -162,7 +162,7 @@ function ScreenMrAndMsInnenDienst()
 		end	
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),ScreenMrAndMsInnenDienst)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),ScreenMrAndMsInnenDienst)
 
 function innendienst_func(thePlayer,cmd,status)
 	local timer=getRealTime()

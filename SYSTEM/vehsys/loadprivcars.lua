@@ -121,7 +121,7 @@ function loadPrivCars()
 		mysql_free_result(result)
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),loadPrivCars)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),loadPrivCars)
 
 function onVehicleDisableFire(thePlayer)
 	if(vioGetElementData(source,"besitzer"))then
@@ -152,7 +152,7 @@ function save_priv_carsB()
 	end
 		outputDebugString("Cars saved!")
 end
-addEventHandler("onResourceStop",getRootElement(),save_priv_carsB)
+addEventHandler("onResourceStop",getResourceRootElement(getThisResource()),save_priv_carsB)
 
 function save_car(veh)
 	if not(vioGetElementData(veh,"tuning"))then

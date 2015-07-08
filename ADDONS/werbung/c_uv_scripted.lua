@@ -95,7 +95,7 @@ function startResourcePlayerOfMonth()
 	triggerServerEvent("requestPlayerOfMonth",getLocalPlayer())
 	
 end
-addEventHandler("onClientResourceStart",getRootElement(),startResourcePlayerOfMonth)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),startResourcePlayerOfMonth)
 
 
 

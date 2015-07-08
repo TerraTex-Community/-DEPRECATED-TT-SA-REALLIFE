@@ -4,7 +4,7 @@ f1_welcome = {
     staticimage = {},
     label = {}
 }
-addEventHandler("onClientResourceStart", getRootElement(),
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()),
     function()
         f1_welcome.window[1] = guiCreateWindow(253, 183, 600, 535, "Willkommen auf TerraTex!", false)
         guiWindowSetSizable(f1_welcome.window[1], false)

@@ -18,7 +18,7 @@ function onPolicePCCreate()
     setElementInterior(policePC[8],10)
 
 end
-addEventHandler("onResourceStart",getRootElement(),onPolicePCCreate)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),onPolicePCCreate)
 
 function onplayerclickpc(but,vutst,ele)
 	if(table.hasValue(policePC,ele))then

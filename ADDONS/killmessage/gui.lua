@@ -37,7 +37,7 @@ function setupTextOnStart ( resource )
 	if resource ~= getThisResource() then return end
 	triggerServerEvent ( "onClientKillmessagesLoaded", getLocalPlayer() )
 end
-addEventHandler ( "onClientResourceStart", getRootElement(), setupTextOnStart )
+addEventHandler ( "onClientResourceStart", getResourceRootElement(getThisResource()), setupTextOnStart )
 
 addEvent ("doSetKillMessageStyle",true)
 function setKillMessageStyle ( startX,startY,align,lines,fadeStart,fadeAnimTime )

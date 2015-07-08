@@ -4,7 +4,7 @@ function createGroveColShape()
 	addEventHandler("onColShapeHit",colshape,enterGroveCol)
 	setGarageOpen(9,true)
 end
-addEventHandler("onResourceStart",getRootElement(),createGroveColShape)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createGroveColShape)
 
 
 

@@ -10,7 +10,7 @@ function createDrogenJobElements()
 	--addEventHandler("onPlayerClick",drogenJobHausElement,cklickOnDrogenHouse)
 	--addEventHandler("onPlayerClick",drogenPed,cklickOnDrogenHouse)
 end
-addEventHandler("onResourceStart",getRootElement(),	createDrogenJobElements)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),	createDrogenJobElements)
 
 function cklickOnDrogenHouse(mouseButton,buttonState,clickedElement)
 	if(vioGetElementData(source,"job")==2)then
@@ -48,7 +48,7 @@ function reduceDrogenPreis(timeshift)
 		end
 	setTimer(reduceDrogenPreis,1800000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),reduceDrogenPreis)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),reduceDrogenPreis)
 
 function selldrugs_func(thePlayer,command,toPlayerName,menge,preis)
 	if(vioGetElementData(thePlayer,"job")==2)then

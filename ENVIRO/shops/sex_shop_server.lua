@@ -12,7 +12,7 @@ function createSexShopMarkers()
 	end
 		
 end
-addEventHandler("onResourceStart",getRootElement(),createSexShopMarkers)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createSexShopMarkers)
 
 --{weapID,Preis}
 SexShopWaren={{11,4.99},{12,9.99},{13,9.99},{10,14.99},{-1,2.50}}

@@ -24,7 +24,7 @@ function startTrinkCreate()
 
 
 end
-addEventHandler("onResourceStart",getRootElement(),startTrinkCreate)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),startTrinkCreate)
 
 function addSprunk_func(thePlayer,cmd,...)
     if(isAdminLevel(thePlayer,4))then

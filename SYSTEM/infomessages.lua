@@ -12,7 +12,7 @@ function messageA()
 	end
 	setTimer(messageB,1800000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),messageA)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),messageA)
 
 
 function messageB()

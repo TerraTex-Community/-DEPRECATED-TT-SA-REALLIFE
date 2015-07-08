@@ -20,7 +20,7 @@ function moveFahrstuhl_geramy()
 	end
 	setTimer(moveFahrstuhl_geramy,(movetime+5000),1)
 end
-addEventHandler("onResourceStart",getRootElement(),moveFahrstuhl_geramy)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),moveFahrstuhl_geramy)
 local markerSchrankeA=false
 local hasSchrankeGeramy=false
 local markerSchrankeB=false
@@ -37,7 +37,7 @@ function createGeramyGarage()
 	markerSchrankeB=createMarker(1628.3935546875,-1682.34375,12.8, "cylinder", 2)	
 	addEventHandler("onMarkerHit",markerSchrankeB,openSchranke_geramy)
 end
-addEventHandler("onResourceStart",getRootElement(),createGeramyGarage)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),createGeramyGarage)
 
 function setGeramyInOfHisGerage(thePlayer)
 	if(getElementType(thePlayer)=="player")then

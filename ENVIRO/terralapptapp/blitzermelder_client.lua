@@ -65,7 +65,7 @@ function onClientRenderBlitzerCheck()
         end
 	end
 end
-addEventHandler("onClientResourceStart",getRootElement(),onClientRenderBlitzerCheck)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),onClientRenderBlitzerCheck)
 
 function reset_lastplayed()
 	lastplayed=false

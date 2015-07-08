@@ -50,7 +50,7 @@ function checkAddLaufUndSchwimm()
     end
 
 end
-addEventHandler("onResourceStart",getRootElement(),checkAddLaufUndSchwimm)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),checkAddLaufUndSchwimm)
 
 
 

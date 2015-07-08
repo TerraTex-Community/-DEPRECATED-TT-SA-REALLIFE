@@ -86,7 +86,7 @@ function adventPresent()
 		end
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),adventPresent)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),adventPresent)
 
 function give_AdventsPresent(player,presentID)
 	local text=adventPresets_big[presentID][2]

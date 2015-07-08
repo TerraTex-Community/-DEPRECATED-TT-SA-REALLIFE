@@ -5,7 +5,7 @@ function aktualizeblitzerMeldedPosition()
 	triggerClientEvent(getRootElement(),"AktualziaBlitzerMeldedTable_Event",getRootElement(),blitzerGemeldetePosition)
 	setTimer(aktualizeblitzerMeldedPosition,60000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),aktualizeblitzerMeldedPosition)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),aktualizeblitzerMeldedPosition)
 
 
 function newsClickedOnBlitzer(mouseButton, buttonState, clickedElement, worldPosX, worldPosY, worldPosZ, screenPosX, screenPosY)

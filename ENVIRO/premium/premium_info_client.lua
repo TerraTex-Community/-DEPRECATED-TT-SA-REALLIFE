@@ -4,7 +4,7 @@
         PremiumInfoGUI_Scrollbar = {}
 		PremiumInfoGUI_Label={}
 -- Created: 12/11/2011 22:26
-addEventHandler("onClientResourceStart",getRootElement(),
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),
     function()
 
         PremiumInfoGUI_Window[1] = guiCreateWindow(125,55,700,300,"Premium Informationen",false)

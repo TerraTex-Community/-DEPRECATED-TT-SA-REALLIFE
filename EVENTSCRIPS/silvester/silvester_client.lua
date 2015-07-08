@@ -3,7 +3,7 @@ function startShootRocketEvery30Seconds5Rockets()
 	shootRocket()
 	setTimer(startShootRocketEvery30Seconds5Rockets,30000,1)
 end
-addEventHandler("onClientResourceStart",getRootElement(),startShootRocketEvery30Seconds5Rockets)
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),startShootRocketEvery30Seconds5Rockets)
 
 
 local RocketTable={

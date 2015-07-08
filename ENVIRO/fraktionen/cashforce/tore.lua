@@ -12,7 +12,7 @@ function create_tore_cf()
 		cf_tore[theKey][9]=createObject(10184,theTable[1],theTable[2],theTable[3],theTable[4],theTable[5],theTable[6])
 	end
 end
-addEventHandler("onResourceStart",getRootElement(),create_tore_cf)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),create_tore_cf)
 
 function open_tore_cf(thePlayer)
 	if(vioGetElementData(thePlayer,"fraktion")==11)then

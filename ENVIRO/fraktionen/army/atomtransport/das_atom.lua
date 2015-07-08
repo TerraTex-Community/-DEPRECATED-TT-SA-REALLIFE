@@ -7,7 +7,7 @@ local atomrest={-1579.1865234375,93.80078125,3.5506792068481}
 function startAtomTimer()
 	setTimer(controlOnAtom,60000,1)
 end
-addEventHandler("onResourceStart",getRootElement(),startAtomTimer)
+addEventHandler("onResourceStart",getResourceRootElement(getThisResource()),startAtomTimer)
 
 function enteratomtransportpickup(thePlayer)
 	if(source==atomPickUp)then

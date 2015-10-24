@@ -14,9 +14,14 @@ The old TerraTex Reallife Script
 
 1. Create A Database and import "geramy_reallife.sql" from Directory "SQL for INSTALL OR UPDATE"
 2. Create A Second Database (OR USE THE SAME LIKE IN 1.) and import "geramy_realife_logs.sql" from "SQL for INSTALL OR UPDATE"
-3. Edit config.lua and config_mysql.lua
+3. Update Login and Databasename in ENGINE/mysql/mysql_start.lua
+4. Update Login and Databasename in ENGINE/mysql/log_mysql_start.lua
 5. UPDATE ACL.XML of the Server -> Add the TerraTex Script resource to admin
 6. Install MTA-Mysql Module
+
+
+##Tutorials
+Install on Windows Server: https://www.youtube.com/watch?v=Y8_vG_dEtjM
 
 
 Dieses Material steht unter der Creative-Commons-Lizenz Namensnennung-Nicht kommerziell 4.0 International. Um eine Kopie dieser Lizenz zu sehen, besuchen Sie http://creativecommons.org/licenses/by-nc/4.0/.

@@ -40,17 +40,17 @@ config["scriptername"]="[TTeam]Geramy92"
 
 --MYSQL CONFIG:
 config["mysqlhost"]="localhost"
-config["mysqluser"]="root"
-config["mysqlpassword"]="-Hooligan-230392-"
-config["mysqldb"]="geramy_reallife"
+config["mysqluser"]=""
+config["mysqlpassword"]=""
+config["mysqldb"]=""
 
 --IF You want to have a second unique log database set 'uniquelogdb' to true else let it be false
 --IF true setup the other entries
 config["uniquelogdb"]=true
 config["logmysqlhost"]="localhost"
-config["logmysqluser"]="root"
-config["logmysqlpassword"]="-Hooligan-230392-"
-config["logmysqldb"]="geramy_reallife_logs"
+config["logmysqluser"]=""
+config["logmysqlpassword"]=""
+config["logmysqldb"]=""
 
 --24h Restart type
 -- Options:

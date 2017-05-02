@@ -1,4 +1,4 @@
-#THIS IS AN OLD OUTDATED VERSION -  USE https://github.com/TerraTex-Community/TerraTex-Reallife-Reloaded INSTEAD!
+<span style="font-weight:bolder">THIS IS AN OLD OUTDATED VERSION -  USE https://github.com/TerraTex-Community/TerraTex-Reallife-Reloaded INSTEAD!</span>
 
 TT-SA-REALLIFE
 ==============
